@@ -102,6 +102,7 @@ a {
 .header__toggle {
   font-size: 1.7rem;
   cursor: pointer;
+  z-index: 1000;
 }
 
 /*===== NAV =====*/
@@ -111,6 +112,8 @@ a {
     top: 0;
     left: -100%;
     background-color: var(--first-color);
+    height: 130vh;
+    width: 300px;
   }
 }
 
