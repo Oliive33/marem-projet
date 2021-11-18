@@ -348,18 +348,18 @@ h1 strong {
 }
 @media screen and (max-width: 475px) {
   main {
-    margin: 40px auto;
+    margin: 150px 0 0 0;
   }
   h1 {
     font-size: 18px;
-    margin: 30px 4px 30px 4px;
+    margin-bottom: 50px;
   }
   .slideshow {
-    width: 430px;
+    width: 360px;
     margin: 0 auto;
   }
   .slideshow-item img {
-    width: 430px;
+    width: 360px;
   }
 }
 /******************* About *************************/
@@ -477,7 +477,7 @@ hr {
 @media screen and (max-width: 475px) {
   .about {
     display: block;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: 0;
   }
   .about h2 {
@@ -495,29 +495,36 @@ hr {
     gap: 1rem;
     margin: 1rem;
   }
+  .features-valeurs {
+    margin-top: 11rem;
+  }
   .features__feature {
     font-size: 16px;
   }
   .features__titles {
     margin-top: 0px;
   }
+  .features__titles .liste-header {
+    font-size: 16px;
+  }
   .features__img {
-    width: 435px;
-    height: 600px;
+    width: 340px;
+    height: 440px;
   }
   .feature-text {
     width: 85%;
     line-height: 1.6;
-    margin: 0;
+    margin: 0 auto;
   }
   .section2 {
     margin: 0rem 0rem 4rem 0rem;
   }
   .features__img2 {
-    width: 400px;
+    width: 340px;
+    height: 350px;
   }
   .text-valeurs {
-    margin-top: 10px;
+    margin-top: 175px;
   }
   .section3 {
     margin: 0rem 0rem 3rem 0rem;
@@ -652,10 +659,16 @@ hr {
     margin-bottom: 2rem;
   }
   .composition_photo--1 {
-    left: 10px;
+    top: 47px;
+    left: 67px;
   }
   .composition_photo--2 {
-    right: -14px;
+    top: -3rem;
+    right: 0px;
+  }
+  .composition_photo--3 {
+    top: 2rem;
+    left: -3rem;
   }
 }
 
@@ -712,11 +725,23 @@ h5 {
   height: 40px;
 }
 @media screen and (max-width: 475px) {
+  footer {
+    height: 200px;
+  }
   .item-brand {
     margin: 10px;
+    width: 70px;
+    height: 70px;
+  }
+  .logo-footer {
+    width: 55px;
+    height: 50px;
+    position: relative;
+    transform: translate(9px, 14px);
   }
   h5 {
     padding: 0;
+    font-size: 18px;
   }
   .items-socialmedia {
     width: 70%;
