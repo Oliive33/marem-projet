@@ -19,6 +19,10 @@
   /*===== z index =====*/
   --z-fixed: 100;
 }
+body.dark-theme {
+  background-color: #2b2b2b;
+  color: white;
+}
 
 @media screen and (min-width: 768px) {
   :root {
@@ -39,7 +43,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   font-weight: 600;
-  background: #fcfcfc;
+  background-color: #fcfcfc;
   max-width: 1440px;
   min-width: 300px;
 }
@@ -57,6 +61,9 @@ a {
 .bd-grid {
   display: grid;
   grid-template-columns: 100%;
+}
+.nav__dark {
+  display: none;
 }
 
 /*===== HEADER =====*/
@@ -102,6 +109,7 @@ a {
 .header__toggle {
   font-size: 1.7rem;
   cursor: pointer;
+  color: black !important;
   z-index: 1000;
 }
 
@@ -282,6 +290,22 @@ a {
 }
 
 @media screen and (max-width: 675px) {
+  /*========== Button Dark/Light ==========*/
+  .nav__dark {
+    display: block;
+    position: absolute;
+    left: 37rem;
+    bottom: 4rem;
+    z-index: 1000;
+  }
+
+  .change-theme {
+    color: black;
+  }
+  .change-theme {
+    cursor: pointer;
+    font-size: 1rem;
+  }
   header {
     padding: 0 3rem;
   }
@@ -293,6 +317,21 @@ a {
   }
   .nav__name {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .nav__dark {
+    left: 24rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .nav__dark {
+    left: 21rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .nav__dark {
+    left: 19rem;
   }
 }
 /******************* Main *************************/
@@ -399,6 +438,10 @@ hr {
   gap: 4rem;
   margin: 0 2rem;
 }
+.features-valeurs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 .features__img {
   width: 500px;
@@ -407,8 +450,8 @@ hr {
   transition: 0.2s ease-in-out;
 }
 .features__img2 {
-  width: 550px;
-  height: 450px;
+  width: 100%;
+  height: 400px;
   box-shadow: 3px 6px 11px 0px rgba(58, 57, 57, 0.75);
 }
 .features__img3 {
@@ -497,6 +540,10 @@ hr {
     gap: 1rem;
     margin: 1rem;
   }
+  .features__header {
+    line-height: 1.6;
+    text-align: center;
+  }
   .features-valeurs {
     margin-top: 11rem;
   }
@@ -508,31 +555,39 @@ hr {
   }
   .features__titles .liste-header {
     font-size: 16px;
+    text-align: left;
   }
   .features__img,
   .features__img3 {
-    /* width: 340px;
-    height: 440px; */
     width: 100%;
     height: 100%;
   }
   .feature-text {
-    width: 85%;
+    width: 95%;
     line-height: 1.6;
     margin: 0 auto;
+    padding: 1rem;
   }
   .section2 {
-    margin: 0rem 0rem 4rem 0rem;
+    margin: 0rem 0rem 2rem 0rem;
   }
   .features__img2 {
     width: 100%;
-    height: 350px;
+    height: 320px;
   }
   .text-valeurs {
-    margin-top: 175px;
+    margin-top: 140px;
   }
   .section3 {
     margin: 0rem 0rem 3rem 0rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  .about h2 {
+    font-size: 21px;
+    width: 94%;
+    margin: 0 auto;
+    text-align: center;
   }
 }
 /******************fonctionnement *******************/
@@ -645,8 +700,8 @@ hr {
 @media screen and (max-width: 675px) {
   .about-4 {
     display: block;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: -15px;
+    margin-bottom: 0px;
   }
   .about-4 h2 {
     text-align: center;
@@ -662,14 +717,17 @@ hr {
   .composition_photo--1 {
     top: 47px;
     left: 67px;
+    transform: scale(1.4);
   }
   .composition_photo--2 {
     top: -3rem;
     right: 0px;
+    transform: scale(1.4);
   }
   .composition_photo--3 {
     top: 2rem;
     left: -3rem;
+    transform: scale(1.4);
   }
 }
 
@@ -745,6 +803,6 @@ h5 {
     font-size: 18px;
   }
   .items-socialmedia {
-    width: 70%;
+    width: 75%;
   }
 }
