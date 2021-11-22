@@ -64,7 +64,7 @@ a {
 /* --------------------Scroll up-------------------- */
 .scrollup {
   position: fixed;
-  right: 0.8rem;
+  right: 0.5rem;
   bottom: -20%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -470,7 +470,7 @@ hr {
 }
 
 .section3 {
-  margin: 0rem 0rem 30rem 0rem;
+  margin: 0rem 0rem 33rem 0rem;
 }
 
 .features {
@@ -892,7 +892,10 @@ h5 {
     text-align: left;
   }
   .titles-valeurs {
-    margin-top: 125px;
+    margin-top: 215px;
+  }
+  .text-valeurs {
+    margin-top: 180px;
   }
 }
 
@@ -941,12 +944,6 @@ h5 {
     left: 0;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
-  }
-  .titles-valeurs {
-    margin-top: 215px;
-  }
-  .text-valeurs {
-    margin-top: 180px;
   }
 }
 
@@ -1001,7 +998,7 @@ h5 {
     margin-bottom: 25px;
   }
   .text-valeurs {
-    margin-top: 150px;
+    margin-top: 50px;
   }
   .section3 {
     margin: 0rem 0rem 3rem 0rem;
