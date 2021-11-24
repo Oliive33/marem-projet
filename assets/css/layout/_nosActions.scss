@@ -1,0 +1,91 @@
+/*===== BASE =====*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: $header-height 0 0 0;
+  font-family: $body-font;
+  font-size: $normal-font-size;
+  font-weight: 600;
+  background-color: #fcfcfc;
+  max-width: 1440px;
+  min-width: 300px;
+  margin: 0 auto;
+  //   height: 100vh;
+}
+// *************Main******************//
+
+.item-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-sensibilisation {
+  width: 600px;
+  height: auto;
+}
+// **************Bénévolat**************//
+.items-benevolats {
+  margin: 20px;
+  padding: 15px;
+  background: #ebebeb;
+  border: 1px solid #7e7c7c;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+.title-benevolat {
+  font-size: 25px;
+  font-family: $titles-font;
+  color: $first-color;
+  margin-left: 170px;
+}
+.txt-benevolat {
+  width: 70%;
+  padding: 10px;
+  line-height: 1.8;
+  margin: 0 auto;
+}
+.link-benevolat {
+  text-align: center;
+  line-height: 1.7;
+}
+.mail-benevolat {
+  text-decoration: none;
+  color: $first-color;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+}
+.mail-benevolat:hover {
+  color: #000;
+  font-weight: bolder;
+  font-size: 20px;
+  transform: scale(0.95);
+}
+
+.links-docs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .link-doc {
+    margin: 25px;
+    background: $first-color;
+    padding: 15px 25px;
+    color: #f1f1f1;
+    transition: all 0.3s ease-in-out;
+    font-size: 21px;
+    border-radius: 5px;
+  }
+  .link-doc:hover {
+    margin: 25px;
+    background: $first-color;
+    padding: 15px 25px;
+    color: black;
+    font-weight: bolder;
+    transform: scalex(0.95);
+  }
+}

@@ -1,0 +1,33 @@
+// Nos centres d'accueil
+
+@mixin titles-centres {
+  width: 85%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 21px;
+}
+@mixin grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@mixin img-float-woezon {
+  width: 200px;
+  height: 200px;
+  background: url(../../../assets/img/centre-accueil.webp);
+  background-size: 100% 100%;
+  border-radius: 50%;
+  shape-outside: circle();
+  float: left;
+  margin: 30px;
+}
+@mixin img-float-emera {
+  width: 200px;
+  height: 200px;
+  background: url(../../../assets/img/centre-accueil.webp);
+  background-size: 100% 100%;
+  border-radius: 50%;
+  shape-outside: circle();
+  float: right;
+  margin: 30px;
+}

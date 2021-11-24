@@ -298,6 +298,7 @@ h1 {
   text-align: center;
   padding: 1.5rem;
   line-height: 1.7;
+  font-family: $titles-font;
 }
 h1 strong {
   color: $first-color;
@@ -354,6 +355,7 @@ h1 strong {
 }
 .about h2 {
   font-size: 30px;
+  font-family: $titles-font;
 }
 hr {
   width: 27%;
@@ -466,6 +468,7 @@ li::marker {
 }
 .about-4 h2 {
   font-size: 30px;
+  font-family: $titles-font;
 }
 /* .paragraphe {
   font-size: 22px;

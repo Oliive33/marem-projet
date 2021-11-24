@@ -134,6 +134,7 @@ body {
     color: $dark-color;
     transition: color 0.3s ease-in-out;
     font-weight: bolder;
+    font-family: $titles-font;
   }
   h3:hover {
     color: $first-color;
@@ -225,6 +226,7 @@ body {
   transition: 0.3s;
   text-align: center;
   font-size: 25px;
+  font-family: $titles-font;
 }
 
 .footer__logo-icon {
