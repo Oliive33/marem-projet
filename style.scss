@@ -1,5 +1,8 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
-@import "./assets/css/index";
-@import "./assets/css/responsive.index";
+@import "./assets/css/utils/variables";
+@import "./assets/css/layout/index";
+@import "./assets/css/layout/contact";
+@import "./assets/css/layout/footer";
+@import "./assets/css/layout/responsive.index";
