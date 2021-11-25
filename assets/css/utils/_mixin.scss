@@ -11,26 +11,6 @@
   grid-template-columns: 1fr 1fr;
 }
 
-@mixin img-float-woezon {
-  width: 200px;
-  height: 200px;
-  background: url(../assets/img/centre-accueil.webp);
-  background-size: 100% 100%;
-  border-radius: 50%;
-  shape-outside: circle();
-  float: left;
-  margin: 30px;
-}
-@mixin img-float-emera {
-  width: 200px;
-  height: 200px;
-  background: url(../assets/img/centre-accueil.webp);
-  background-size: 100% 100%;
-  border-radius: 50%;
-  shape-outside: circle();
-  float: right;
-  margin: 30px;
-}
 // Nos Actions
 @mixin actions-backgrounds {
   margin: 20px;

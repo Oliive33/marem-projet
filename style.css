@@ -1140,7 +1140,7 @@ body {
 .circle {
   width: 200px;
   height: 200px;
-  background: url(../assets/img/centre-accueil.webp);
+  background: url(./assets/img/centre-accueil.webp);
   background-size: 100% 100%;
   border-radius: 50%;
   shape-outside: circle();
@@ -1179,7 +1179,7 @@ body {
 .circle2 {
   width: 200px;
   height: 200px;
-  background: url(../assets/img/centre-accueil.webp);
+  background: url(./assets/img/centre-accueil.webp);
   background-size: 100% 100%;
   border-radius: 50%;
   shape-outside: circle();
