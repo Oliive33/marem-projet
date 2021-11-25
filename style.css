@@ -1439,7 +1439,7 @@ body {
 .section-parallax {
   width: 100%;
   height: 300px;
-  background: url(../../../assets/img/enfants-jardins.webp) no-repeat right/cover fixed;
+  background: url(../../img/enfants-jardins.webp) no-repeat right/cover fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1475,7 +1475,7 @@ body {
 
 @media screen and (max-width: 700px) {
   .section-parallax {
-    background: url(../../../assets/img/enfants-jardins.webp) no-repeat center/cover fixed;
+    background: url(../../img/enfants-jardins.webp) no-repeat center/cover fixed;
   }
   .txt-par {
     font-size: 20px;
