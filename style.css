@@ -1260,6 +1260,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
+  background: rgba(203, 27, 36, 0.329);
 }
 
 .commandes img {
@@ -1315,7 +1316,7 @@ body {
   margin: 5px;
   cursor: pointer;
   outline: none;
-  border: 1px solid #333;
+  border: 0;
 }
 
 .active-cercle {
@@ -1324,6 +1325,15 @@ body {
 
 .active {
   opacity: 1 !important;
+}
+
+@media screen and (max-width: 500px) {
+  .slider {
+    margin: 180px auto 0;
+  }
+  .cercles {
+    top: 90%;
+  }
 }
 
 .items-benevolats {
@@ -1337,11 +1347,17 @@ body {
           box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
 }
 
+.title-actions {
+  font-size: 40px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
 .title-benevolat {
   font-size: 25px;
   font-family: "Roboto", sans-serif;
   color: #cb1b23;
-  margin-left: 170px;
+  text-align: center;
 }
 
 .txt-benevolat {
@@ -1557,6 +1573,89 @@ body {
 .txt-benevolat::first-letter,
 .txt-projet-secondary::first-letter {
   color: #cb1b23;
+}
+
+@media screen and (max-width: 1024px) {
+  .item-action {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px;
+  }
+  .title-actions {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .items-sensibilisation {
+    padding: 0;
+  }
+  .titre-projet-en-cours {
+    font-size: 20px;
+  }
+  .projets-cours {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .txt-benevolat,
+  .txt-sensibilisation {
+    width: 85%;
+  }
+  .links-docs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .links-docs .link-doc {
+    font-size: 18px;
+    margin: 10px;
+  }
+  .links-docs .link-doc1 {
+    padding: 15px 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .txt-benevolat,
+  .txt-sensibilisation {
+    width: 100%;
+  }
+  .section-parallax {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .txt-projet-en-cours,
+  .txt-projet-a-venir {
+    width: 100%;
+    line-height: 1.6;
+  }
+  .txt-projet-secondary {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title-actions {
+    font-size: 25px;
+  }
+  .txt-benevolat {
+    padding: 5px;
+  }
+  .links-docs .link-doc {
+    margin: 10px;
+  }
+  .links-docs .link-doc1 {
+    padding: 20px 50px;
+  }
+  .links-docs .link-doc2 {
+    padding: 20px 5px;
+  }
 }
 
 /* ****************footer************************ */
