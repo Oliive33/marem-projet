@@ -17,25 +17,95 @@ body {
   //   height: 100vh;
 }
 // *************Main******************//
+.slider {
+  width: 100%;
+  height: 420px;
+  margin: 130px auto 0;
+  position: relative;
+}
 
-.item-action {
+.cont-slides {
+  width: 100%;
+  height: 100%;
+}
+
+.cont-slides img {
+  width: 100%;
+  height: 420px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  object-fit: cover;
+}
+.commandes {
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.commandes button {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.commandes img {
+  width: 15px;
+  position: relative;
+}
+.commandes button:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+}
+.commandes button:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+.commandes button:nth-child(1) img {
+  left: -2px;
+}
+.commandes button:nth-child(2) img {
+  right: -2px;
+}
+
+.cercles {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.img-sensibilisation {
-  width: 600px;
-  height: auto;
+.cercle {
+  width: 15px;
+  height: 15%;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #333;
 }
+
+.active-cercle {
+  background: $first-color;
+}
+.active {
+  opacity: 1 !important;
+}
+
 // **************Bénévolat**************//
 .items-benevolats {
-  margin: 20px;
-  padding: 15px;
-  background: #ebebeb;
-  border: 1px solid #7e7c7c;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+  @include actions-backgrounds;
 }
 .title-benevolat {
   font-size: 25px;
@@ -44,10 +114,7 @@ body {
   margin-left: 170px;
 }
 .txt-benevolat {
-  width: 70%;
-  padding: 10px;
-  line-height: 1.8;
-  margin: 0 auto;
+  @include actions-txt;
 }
 .link-benevolat {
   text-align: center;
@@ -88,4 +155,110 @@ body {
     font-weight: bolder;
     transform: scalex(0.95);
   }
+}
+// **************Sensibilisation**************//
+.items-sensibilisation {
+  @include actions-backgrounds;
+}
+.txt-sensibilisation {
+  @include actions-txt;
+}
+.item-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* --------------------Section Parallax-------------------- */
+.section-parallax {
+  width: 100%;
+  height: 300px;
+  background: url(../../assets/img/enfants-jardins.webp) no-repeat right / cover
+    fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px dashed #333;
+  border-bottom: 1px dashed #333;
+}
+.txt-par {
+  font-size: 30px;
+  font-weight: bold;
+  color: #f1f1f1;
+  margin: 0 50px;
+  background: rgba(203, 27, 36, 0.719);
+  border-radius: 4px;
+  border: 0;
+  padding: 15px 20px;
+  text-align: center;
+}
+/* Media parallax */
+@media screen and (max-width: 1300px) {
+  .txt-par {
+    font-size: 23px;
+    margin: 0 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .section-parallax {
+    background: url(../../assets/img/enfants-jardins.webp) no-repeat center /
+      cover fixed;
+  }
+
+  .txt-par {
+    font-size: 20px;
+    margin: 0 25px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .section-parallax {
+    flex-direction: column;
+  }
+  .txt-par {
+    font-size: 20px;
+    margin: 20px 0px;
+  }
+}
+// **************projets en cours**************//
+.items-projets-en-cours {
+  @include actions-backgrounds;
+}
+.projets-cours {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.titre-projet-en-cours {
+  font-size: 25px;
+  font-family: $titles-font;
+  color: $first-color;
+  text-align: center;
+}
+.txt-projet-en-cours {
+  width: 90%;
+  padding: 10px;
+  line-height: 1.8;
+  margin: 0 auto;
+}
+.txt-projet-secondary {
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.9;
+  text-align: center;
+}
+// **************projets a venir**************//
+.items-projets-a-venir {
+  @include actions-backgrounds;
+}
+.txt-projet-a-venir {
+  width: 70%;
+  padding: 10px;
+  line-height: 1.8;
+  margin: 0 auto;
+}
+.txt-projet-a-venir::first-letter,
+.txt-projet-en-cours::first-letter,
+.txt-sensibilisation::first-letter,
+.txt-benevolat::first-letter,
+.txt-projet-secondary::first-letter {
+  color: $first-color;
 }

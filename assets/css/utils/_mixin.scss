@@ -31,3 +31,19 @@
   float: right;
   margin: 30px;
 }
+// Nos Actions
+@mixin actions-backgrounds {
+  margin: 20px;
+  padding: 15px;
+  background: #ebebeb;
+  border: 1px solid #7e7c7c;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+@mixin actions-txt {
+  width: 70%;
+  padding: 10px;
+  line-height: 1.8;
+  margin: 0 auto;
+}
