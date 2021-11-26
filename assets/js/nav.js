@@ -7,10 +7,10 @@ window.addEventListener("scroll", function () {
   console.log(scroll);
 
   if (scroll > 200) {
-    navbar.style.height = "30vh";
-    navElements.style.height = "30vh";
+    navbar.style.height = "28vh";
+    navElements.style.height = "28vh";
   } else {
-    navbar.style.height = "40vh";
-    navElements.style.height = "40vh";
+    navbar.style.height = "36vh";
+    navElements.style.height = "36vh";
   }
 });
