@@ -916,7 +916,7 @@ body {
 
 @media screen and (max-width: 450px) {
   .title-contact-principal {
-    font-size: 25px;
+    font-size: 22px;
   }
   .img-contact {
     width: 85%;
@@ -1669,7 +1669,7 @@ body {
 
 @media screen and (max-width: 400px) {
   .title-actions {
-    font-size: 25px;
+    font-size: 20px;
   }
   .txt-benevolat {
     padding: 5px;
@@ -2757,7 +2757,7 @@ h5 {
     padding: 10px;
   }
   .title-centre-principal {
-    font-size: 25px;
+    font-size: 20px;
   }
   .items-centre-accueil .dash-titles {
     width: 20%;
