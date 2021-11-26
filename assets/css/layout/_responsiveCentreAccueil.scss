@@ -40,6 +40,9 @@
   }
 }
 @media screen and (max-width: 700px) {
+  .title-centre-principal {
+    font-size: 30px;
+  }
   .title-accueil {
     font-size: 25px;
   }
@@ -50,8 +53,8 @@
     padding: 10px;
   }
 
-  .titre-centre-principal {
-    font-size: 20px;
+  .title-centre-principal {
+    font-size: 25px;
   }
   .items-centre-accueil .dash-titles {
     width: 20%;

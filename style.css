@@ -647,24 +647,6 @@ li::marker {
           transform: scale(0.95);
 }
 
-/*===== BASE =====*/
-*,
-::before,
-::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  margin: 6rem 0 0 0;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 600;
-  background-color: #fcfcfc;
-  max-width: 1440px;
-  min-width: 300px;
-  margin: 0 auto;
-}
-
 /*===== HEADER =====*/
 .header__contact {
   position: fixed;
@@ -695,6 +677,8 @@ body {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .img__contact {
@@ -726,8 +710,13 @@ body {
   text-transform: uppercase;
 }
 
+.contact-slogan {
+  font-size: 20px;
+}
+
 .contact-slogan strong {
   color: #cb1b23;
+  font-size: 21px;
 }
 
 @media screen and (min-width: 1100px) {
@@ -762,9 +751,55 @@ body {
   .title-contact {
     font-size: 35px;
   }
+  .img__contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f1f1f1;
+  }
+  .img__contact img {
+    width: 50px;
+    height: 50px;
+  }
   .contact-slogan {
     font-size: 16px;
   }
+  .contact-slogan strong {
+    color: #cb1b23;
+    font-size: 18px;
+  }
+}
+
+/*===== BASE =====*/
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 6rem 0 0 0;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  background-color: #fcfcfc;
+  max-width: 1440px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+.title-contact-principal {
+  padding: 0rem;
+  margin: 0rem;
+  font-size: 35px;
+  text-transform: uppercase;
 }
 
 .items-contact {
@@ -772,7 +807,7 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  margin: 10rem 0 0 1rem;
+  margin: 2rem 0 0 1rem;
 }
 
 .img-contact {
@@ -844,7 +879,6 @@ body {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    margin: 10rem 0 0 0rem;
   }
   .img-contact {
     width: 75%;
@@ -856,12 +890,6 @@ body {
   }
   .items-mail a {
     font-size: 22px;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .items-contact {
-    margin: 20rem 0 0 0rem;
   }
 }
 
@@ -887,6 +915,9 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  .title-contact-principal {
+    font-size: 25px;
+  }
   .img-contact {
     width: 85%;
   }
@@ -1025,8 +1056,8 @@ body {
 }
 
 .container-global {
-  padding: 3rem 0rem 0rem 0rem;
-  margin-top: 85px;
+  padding: 0;
+  margin-top: 0px;
 }
 
 .slider-centres {
@@ -1325,7 +1356,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .slider {
-    margin: 180px auto 0;
+    margin: 0px auto 0;
   }
   .cercles {
     top: 90%;
@@ -1680,7 +1711,7 @@ body {
 }
 
 .container-don {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 
 .title-don {
@@ -1694,7 +1725,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   width: 70%;
-  margin: 180px auto 100px;
+  margin: 80px auto 100px;
 }
 
 .title-don::first-letter {
@@ -2098,7 +2129,7 @@ change color of titles and background .accordion-open .questions__header,
     font-size: 30px;
   }
   .title-don {
-    margin: 230px auto 30px;
+    margin: 30px auto 30px;
     width: 85%;
   }
   .txt-don {
@@ -2141,6 +2172,9 @@ change color of titles and background .accordion-open .questions__header,
 }
 
 @media screen and (max-width: 575px) {
+  .title-don-principal {
+    font-size: 25px;
+  }
   .txt-don-choice {
     margin: 50px auto;
   }
@@ -2710,6 +2744,9 @@ h5 {
 }
 
 @media screen and (max-width: 700px) {
+  .title-centre-principal {
+    font-size: 30px;
+  }
   .title-accueil {
     font-size: 25px;
   }
@@ -2719,8 +2756,8 @@ h5 {
   .container-accueil {
     padding: 10px;
   }
-  .titre-centre-principal {
-    font-size: 20px;
+  .title-centre-principal {
+    font-size: 25px;
   }
   .items-centre-accueil .dash-titles {
     width: 20%;

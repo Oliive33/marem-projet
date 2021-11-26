@@ -21,9 +21,10 @@ body {
   font-size: 35px;
   text-transform: uppercase;
 }
+
 // *************Main******************//
 .container-don {
-  margin-top: 150px;
+  margin-top: 50px;
 }
 .title-don {
   text-align: center;
@@ -35,7 +36,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   width: 70%;
-  margin: 180px auto 100px;
+  margin: 80px auto 100px;
 }
 .title-don::first-letter {
   color: $first-color;
@@ -368,7 +369,7 @@ change color of titles and background .accordion-open .questions__header,
     font-size: 30px;
   }
   .title-don {
-    margin: 230px auto 30px;
+    margin: 30px auto 30px;
     width: 85%;
   }
   .txt-don {
@@ -410,6 +411,9 @@ change color of titles and background .accordion-open .questions__header,
   }
 }
 @media screen and (max-width: 575px) {
+  .title-don-principal {
+    font-size: 25px;
+  }
   .txt-don-choice {
     margin: 50px auto;
   }
