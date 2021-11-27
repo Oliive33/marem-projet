@@ -48,39 +48,6 @@ a {
   display: none;
 }
 
-/* --------------------Scroll up-------------------- */
-.scrollup {
-  position: fixed;
-  right: 0.5rem;
-  bottom: -20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-decoration: none;
-  background: #cb1b23;
-  border-radius: 5px;
-  padding: 0.45rem;
-  opacity: 0.8;
-  z-index: 10;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.scrollup:hover {
-  background: #b4b4b4;
-  opacity: 1;
-}
-
-.scrollup .fa-chevron-up {
-  color: #363636;
-  font-size: 1.35rem;
-}
-
-/* Show Scroll Up*/
-.show-scroll {
-  bottom: 64px;
-}
-
 /*===== HEADER =====*/
 .header {
   position: fixed;
@@ -2343,6 +2310,39 @@ h5 {
 .logo-medias {
   width: 40px;
   height: 40px;
+}
+
+/* --------------------Scroll up-------------------- */
+.scrollup {
+  position: fixed;
+  right: 0.5rem;
+  bottom: -20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  background: #cb1b23;
+  border-radius: 5px;
+  padding: 0.45rem;
+  opacity: 0.8;
+  z-index: 10;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.scrollup:hover {
+  background: #b4b4b4;
+  opacity: 1;
+}
+
+.scrollup .fa-chevron-up {
+  color: #363636;
+  font-size: 1.35rem;
+}
+
+/* Show Scroll Up*/
+.show-scroll {
+  bottom: 64px;
 }
 
 @media screen and (max-width: 750px) {

@@ -36,33 +36,7 @@ a {
 .nav__dark {
   display: none;
 }
-/* --------------------Scroll up-------------------- */
-.scrollup {
-  position: fixed;
-  right: 0.5rem;
-  bottom: -20%;
-  display: flex;
-  text-decoration: none;
-  background: $first-color;
-  border-radius: 5px;
-  padding: 0.45rem;
-  opacity: 0.8;
-  z-index: 10;
-  transition: 0.4s;
-}
-.scrollup:hover {
-  background: #b4b4b4;
-  opacity: 1;
-}
 
-.scrollup .fa-chevron-up {
-  color: rgb(54, 54, 54);
-  font-size: 1.35rem;
-}
-/* Show Scroll Up*/
-.show-scroll {
-  bottom: 64px;
-}
 /*===== HEADER =====*/
 .header {
   position: fixed;
