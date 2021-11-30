@@ -58,26 +58,115 @@
     ></script>
   </head>
   <body>
-    <header id="navbar">
-      <div id="nav-elements" class="header__contact">
-        <a href="../index.html" class="nav-logo">
-          <div class="img__contact">
-            <img src="../assets/img/logos/logo.png" alt="logo" />
-          </div>
-        </a>
-        <h1 class="title-centre-principal">Nos Centres d'Accueil</h1>
-        <div>
-          <span class="contact-slogan"
-            ><strong>A</strong>ider à <strong>c</strong>onstruire un
-            <strong>m</strong>eilleur <strong>a</strong>venir</span
-          >
-        </div>
+    <header class="header">
+      <!-- <div class="nav__dark">
+        <i class="ri-moon-line change-theme" id="theme-button"></i>
+      </div> -->
+      <a href="#" class="header__logo"
+        ><img src="../assets/img/logos/logo.png" alt="logo" />
+      </a>
 
-        <!-- <div class="nav__dark">
-          <i class="ri-moon-line change-theme" id="theme-button"></i>
-        </div> -->
-      </div>
+      <i class="bx bx-menu header__toggle" id="header-toggle"></i>
+
+      <nav class="nav" id="nav-menu">
+        <div class="nav__content bd-grid">
+          <a href="../index.html" class="nav__perfil">
+            <div class="nav__img">
+              <img src="../assets/img/logos/logo.png" alt="logo" />
+            </div>
+            <div>
+              <span class="nav__name"
+                >Aider à construire un meilleur avenir</span
+              >
+            </div>
+          </a>
+
+          <div class="nav__menu">
+            <ul class="nav__list">
+              <!-- <li class="nav__item">
+                <a href="../index.html" class="nav__link">Accueil</a>
+              </li> -->
+
+              <li class="nav__item dropdown">
+                <a href="#qui-sommes-nous" class="nav__link dropdown__link"
+                  >Qui sommes-nous ?<i
+                    class="bx bx-chevron-down dropdown__icon"
+                  ></i
+                ></a>
+
+                <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                    <a href="#but" class="nav__link">Buts</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#valeurs" class="nav__link">Valeurs</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Fonctionnement</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Marem France</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Marem Togo</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Partenaires</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav__item dropdown">
+                <a
+                  href="#centre"
+                  class="nav__link dropdown__link active link-bigger"
+                  >Nos Centres d'accueil<i
+                    class="bx bx-chevron-down dropdown__icon"
+                  ></i
+                ></a>
+
+                <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Espace woezon</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Centre emera</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item dropdown">
+                <a href="./nosActions.html" class="nav__link dropdown__link"
+                  >Nos actions<i class="bx bx-chevron-down dropdown__icon"></i
+                ></a>
+
+                <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Bénévolat</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Sensibilisation</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Projets en cours</a>
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="#" class="nav__link">Projets à venir</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav__item">
+                <a href="./faireUnDon.html" class="nav__link">Faire un don </a>
+              </li>
+
+              <li class="nav__item">
+                <a href="./contact.html" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
+
     <div class="container-global">
       <div class="slider-centres">
         <div class="slider-item-centres">
@@ -279,7 +368,7 @@
       <i class="fas fa-chevron-up"></i>
     </a>
 
-    <script src="../assets/js/nav.js"></script>
+    <script src="../assets/js/main.js"></script>
     <script src="../assets/js/scroll.js"></script>
   </body>
 </html>
