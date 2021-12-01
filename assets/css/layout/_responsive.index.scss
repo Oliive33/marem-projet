@@ -162,8 +162,15 @@
   .section-about {
     padding: 0 0 5rem 0;
   }
+  .about hr {
+    margin: 0 auto;
+  }
+  .about-4 h2 {
+    margin: 15px;
+  }
   .about-4 hr {
     width: 30%;
+    margin: 0 auto;
   }
   .centerH {
     margin-bottom: 2rem !important;
@@ -229,7 +236,8 @@
   }
 
   .features__feature {
-    font-size: 16px;
+    margin-bottom: 40px;
+    font-size: 17px;
   }
   .features__titles {
     margin-top: 0px;
@@ -308,7 +316,7 @@
     font-size: 18px;
   }
   .items-socialmedia {
-    width: 75%;
+    width: 50%;
   }
   .items-socialmedia ul li {
     margin: 12px;
@@ -334,17 +342,21 @@
   .about h2 {
     font-size: 21px;
     width: 94%;
-    margin: 0 auto;
+    // margin: 0 auto;
     text-align: center;
   }
   .features-valeurs {
     grid-template-rows: 270px;
   }
+
   .text-valeurs {
     margin-top: 80px;
   }
 
   #row [class^="col-"]:not(:last-child) {
     margin-bottom: 2rem;
+  }
+  .items-socialmedia {
+    width: 80%;
   }
 }

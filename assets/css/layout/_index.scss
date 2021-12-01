@@ -108,9 +108,10 @@ h1 strong {
 .about h2 {
   font-size: 30px;
   font-family: $titles-font;
+  margin: 15px;
 }
 hr {
-  width: 27%;
+  width: 25%;
   height: 2px;
   border-radius: 5px;
   border: none;
@@ -216,15 +217,15 @@ li::marker {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 .about-4 h2 {
   font-size: 30px;
   font-family: $titles-font;
 }
-/* .paragraphe {
-  font-size: 22px;
-} */
+.features__fonction {
+  color: $first-color;
+}
 .paragraphe:not(:last-child) {
   margin-bottom: 3rem;
 }
