@@ -1942,6 +1942,8 @@ change color of titles and background .accordion-open .questions__header,
   color: #f1f1f1;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1000;
 }
 
 .link-hello-asso a:hover {
@@ -2233,7 +2235,7 @@ change color of titles and background .accordion-open .questions__header,
     font-size: 19px;
   }
   .link-hello-asso {
-    width: 95%;
+    width: 90%;
     margin: 50px auto;
   }
 }

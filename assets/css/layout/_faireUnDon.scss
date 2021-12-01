@@ -34,8 +34,6 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: -20px;
-  // border-bottom: 1px solid $first-color;
-  // transition: all 0.5s ease-in-out;
 }
 .title-don-slogan span::after {
   content: "";
@@ -360,6 +358,8 @@ change color of titles and background .accordion-open .questions__header,
 .link-hello-asso a {
   color: #f1f1f1;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1000;
 }
 // .link-hello-asso:hover {
 // }
@@ -643,7 +643,7 @@ change color of titles and background .accordion-open .questions__header,
     font-size: 19px;
   }
   .link-hello-asso {
-    width: 95%;
+    width: 90%;
     margin: 50px auto;
   }
 }
