@@ -1,16 +1,16 @@
 // =================Btn Toggle====================//
-const btnMenu = document.querySelector(".header__contact");
-const menu = document.querySelector(".nav-logo");
+// const btnMenus = document.querySelector(".header__contact");
+// const menu = document.querySelector(".nav-logo");
 
-btnMenu.addEventListener("click", () => {
-  menu.classList.toggle("active");
-});
+// btnMenus.addEventListener("click", () => {
+//   menu.classList.toggle("active");
+// });
 
-const allLinks = document.querySelector(".contact-slogan");
+// const allLinks = document.querySelector(".contact-slogan");
 
-allLinks.addEventListener("click", () => {
-  menu.classList.remove("active");
-});
+// allLinks.addEventListener("click", () => {
+//   menu.classList.remove("active");
+// });
 
 // ------------------Slider nos actions---------------------//
 const imgs = document.querySelectorAll(".cont-slides img");
