@@ -3,6 +3,8 @@
 ::before,
 ::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -26,8 +28,30 @@ body {
 .container-don {
   margin-top: 150px;
 }
-.title-don {
+.title-don-slogan {
   text-align: center;
+  font-family: $titles-font;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: -20px;
+  // border-bottom: 1px solid $first-color;
+  // transition: all 0.5s ease-in-out;
+}
+.title-don-slogan span::after {
+  content: "";
+  display: block;
+  width: 0px;
+  margin: 5px auto 0 auto;
+  height: 2px;
+  border-radius: 2px;
+  background: $first-color;
+  transition: all 0.6s ease-in-out;
+}
+.title-don-slogan span:hover::after {
+  width: 45%;
+  max-width: 1300px;
+}
+.title-don {
   background: #f1f1f1;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -389,6 +413,13 @@ change color of titles and background .accordion-open .questions__header,
 
 //---------------------Responsive style------------------------//
 @media screen and (max-width: 1024px) {
+  .title-don-slogan {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .title-don-slogan span:hover::after {
+    width: 55%;
+  }
   .cartes {
     grid-template-columns: 1fr;
   }
@@ -417,6 +448,9 @@ change color of titles and background .accordion-open .questions__header,
   }
 }
 @media screen and (max-width: 900px) {
+  .title-don-slogan span:hover::after {
+    width: 60%;
+  }
   .title-don-principal {
     font-size: 30px;
   }
@@ -436,8 +470,15 @@ change color of titles and background .accordion-open .questions__header,
 }
 
 @media screen and (max-width: 700px) {
+  .title-don-slogan span:hover::after {
+    width: 70%;
+  }
   .txt-don-choice {
     font-size: 21px;
+  }
+  .questions__title {
+    padding: 1rem 0 0 0rem;
+    font-size: 23px;
   }
   .btn-fermer-slider {
     width: 45px;
@@ -466,6 +507,10 @@ change color of titles and background .accordion-open .questions__header,
   }
 }
 @media screen and (max-width: 575px) {
+  .title-don-slogan {
+    font-size: 20px;
+  }
+
   .title-don-principal {
     font-size: 25px;
   }
@@ -494,8 +539,12 @@ change color of titles and background .accordion-open .questions__header,
   }
 }
 @media screen and (max-width: 500px) {
+  .title-don-slogan span:hover::after {
+    width: 85%;
+  }
   .questions__title {
-    padding: 2rem 0 0 0rem;
+    padding: 2rem 0.5rem 0 0.5rem;
+    font-size: 22px;
   }
   .carte {
     cursor: pointer;
@@ -515,6 +564,18 @@ change color of titles and background .accordion-open .questions__header,
   }
 }
 @media screen and (max-width: 450px) {
+  .container-don {
+    margin-top: 120px;
+  }
+  .title-don-slogan {
+    padding: 0.5rem;
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .title-don-slogan span:hover::after {
+    width: 80%;
+  }
   .title-don {
     width: 95%;
   }
@@ -546,6 +607,21 @@ change color of titles and background .accordion-open .questions__header,
   }
 }
 @media screen and (max-width: 400px) {
+  .container-don {
+    margin-top: 100px;
+  }
+  .title-don-slogan span:hover::after {
+    width: 85%;
+  }
+  .grid-item {
+    margin: 31px 45px;
+  }
+  .txt-don-choice {
+    margin: 30px auto;
+  }
+  .questions__title {
+    font-size: 19px;
+  }
   .carte {
     cursor: pointer;
     width: 300px;
@@ -561,5 +637,18 @@ change color of titles and background .accordion-open .questions__header,
   .recto img {
     width: 300px;
     height: 255px;
+  }
+  .recto span {
+    padding: 15px 7px;
+    font-size: 19px;
+  }
+  .link-hello-asso {
+    width: 95%;
+    margin: 50px auto;
+  }
+}
+@media screen and (max-width: 350px) {
+  .title-don-slogan span:hover::after {
+    width: 0;
   }
 }
