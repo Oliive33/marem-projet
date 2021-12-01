@@ -37,43 +37,44 @@ body {
   object-fit: cover;
 }
 .commandes {
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+  // top: 0px;
+  // width: 100%;
+  // height: 100%;
+  // position: absolute;
+  visibility: hidden;
 }
 
-.commandes button {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  background: rgba(203, 27, 36, 0.329);
-}
-.commandes img {
-  width: 15px;
-  position: relative;
-}
-.commandes button:nth-child(1) {
-  top: 50%;
-  transform: translateY(-50%);
-  left: 5px;
-}
-.commandes button:nth-child(2) {
-  top: 50%;
-  transform: translateY(-50%);
-  right: 5px;
-}
-.commandes button:nth-child(1) img {
-  left: -2px;
-}
-.commandes button:nth-child(2) img {
-  right: -2px;
-}
+// .commandes button {
+//   position: absolute;
+//   width: 45px;
+//   height: 45px;
+//   border-radius: 50%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   cursor: pointer;
+//   background: rgba(203, 27, 36, 0.329);
+// }
+// .commandes img {
+//   width: 15px;
+//   position: relative;
+// }
+// .commandes button:nth-child(1) {
+//   top: 50%;
+//   transform: translateY(-50%);
+//   left: 5px;
+// }
+// .commandes button:nth-child(2) {
+//   top: 50%;
+//   transform: translateY(-50%);
+//   right: 5px;
+// }
+// .commandes button:nth-child(1) img {
+//   left: -2px;
+// }
+// .commandes button:nth-child(2) img {
+//   right: -2px;
+// }
 
 .cercles {
   position: absolute;
@@ -107,7 +108,7 @@ body {
     margin: 0px auto 0;
   }
   .cercles {
-    top: 90%;
+    top: 95%;
   }
 }
 
@@ -192,6 +193,7 @@ body {
   align-items: center;
   border-top: 1px dashed $first-color;
   border-bottom: 1px dashed $first-color;
+  flex-wrap: wrap;
 }
 .txt-par {
   font-size: 30px;
@@ -217,18 +219,31 @@ body {
   }
 }
 @media screen and (max-width: 700px) {
+  .txt-sensibilisation {
+    width: 85%;
+  }
+
   .section-parallax {
     background: url(./assets/img/enfants-jardins.webp) no-repeat center / cover
       fixed;
-    flex-direction: column;
+    // flex-direction: column;
+    height: 350px;
   }
 
   .txt-par {
     font-size: 20px;
-    margin: 20px 0px;
+    margin: 20px 15px;
   }
 }
-
+@media screen and (max-width: 450px) {
+  .section-parallax {
+    flex-direction: column;
+    height: 425px;
+  }
+  .txt-par {
+    margin: 35px 15px;
+  }
+}
 // **************projets en cours**************//
 .items-projets-en-cours {
   @include actions-backgrounds;

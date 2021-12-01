@@ -315,6 +315,15 @@
   }
 }
 @media screen and (max-width: 420px) {
+  .header {
+    height: 4rem;
+  }
+  .header__logo img {
+    position: absolute;
+    width: 65px;
+    height: 44px;
+    top: 13px;
+  }
   h1 {
     margin: 1px;
   }

@@ -763,6 +763,15 @@ body {
     font-size: 18px;
     margin: 5px;
   }
+  .newsletter__content {
+    margin: 50px auto;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .items-contact {
+    margin: 6rem 0 0 0rem;
+  }
 }
 
 .newsletter__content {
@@ -1104,55 +1113,7 @@ body {
 }
 
 .commandes {
-  top: 0px;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-
-.commandes button {
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  cursor: pointer;
-  background: rgba(203, 27, 36, 0.329);
-}
-
-.commandes img {
-  width: 15px;
-  position: relative;
-}
-
-.commandes button:nth-child(1) {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  left: 5px;
-}
-
-.commandes button:nth-child(2) {
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 5px;
-}
-
-.commandes button:nth-child(1) img {
-  left: -2px;
-}
-
-.commandes button:nth-child(2) img {
-  right: -2px;
+  visibility: hidden;
 }
 
 .cercles {
@@ -1197,7 +1158,7 @@ body {
     margin: 0px auto 0;
   }
   .cercles {
-    top: 90%;
+    top: 95%;
   }
 }
 
@@ -1332,6 +1293,8 @@ body {
           align-items: center;
   border-top: 1px dashed #cb1b23;
   border-bottom: 1px dashed #cb1b23;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .txt-par {
@@ -1362,16 +1325,29 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+  .txt-sensibilisation {
+    width: 85%;
+  }
   .section-parallax {
     background: url(./assets/img/enfants-jardins.webp) no-repeat center/cover fixed;
+    height: 350px;
+  }
+  .txt-par {
+    font-size: 20px;
+    margin: 20px 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .section-parallax {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 425px;
   }
   .txt-par {
-    font-size: 20px;
-    margin: 20px 0px;
+    margin: 35px 15px;
   }
 }
 
@@ -2616,6 +2592,15 @@ h5 {
 }
 
 @media screen and (max-width: 420px) {
+  .header {
+    height: 4rem;
+  }
+  .header__logo img {
+    position: absolute;
+    width: 65px;
+    height: 44px;
+    top: 13px;
+  }
   h1 {
     margin: 1px;
   }
