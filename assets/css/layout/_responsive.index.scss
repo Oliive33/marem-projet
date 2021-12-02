@@ -1,20 +1,4 @@
 @media screen and (max-width: 750px) {
-  /*========== Button Dark/Light ==========*/
-  .nav__dark {
-    display: block;
-    position: absolute;
-    left: 37rem;
-    bottom: 5rem;
-    z-index: 1000;
-  }
-
-  .change-theme {
-    color: black;
-  }
-  .change-theme {
-    cursor: pointer;
-    font-size: 1rem;
-  }
   header {
     padding: 0 3rem;
   }
@@ -25,21 +9,7 @@
     margin-top: 10px;
   }
 }
-@media screen and (max-width: 550px) {
-  .nav__dark {
-    left: 24rem;
-  }
-}
-@media screen and (max-width: 400px) {
-  .nav__dark {
-    left: 21rem;
-  }
-}
-@media screen and (max-width: 375px) {
-  .nav__dark {
-    left: 19rem;
-  }
-}
+
 @media screen and (max-width: 1300px) {
   .section {
     margin: 2rem 0rem 19rem 0rem;
@@ -76,7 +46,7 @@
     margin: 0rem 0rem 3rem 0rem;
   }
   #row .col-1-of-2 {
-    padding: 2rem;
+    padding: 1.2rem;
   }
   .items-socialmedia {
     width: 35%;
@@ -104,9 +74,6 @@
   .feature-but {
     grid-template-columns: 1fr 1fr;
   }
-  // .features-valeurs {
-  //   grid-template-rows: 150px;
-  // }
 }
 @media screen and (max-width: 1024px) {
   main {
@@ -116,15 +83,22 @@
     margin-bottom: 35px;
   }
 
-  .about {
+  .about,
+  .about-valeurs {
     display: block;
     margin-top: 30px;
     margin-bottom: 0;
   }
-  .about h2 {
+  .about h2,
+  .about-valeurs h2 {
     font-size: 22px;
     text-align: center;
   }
+  .about hr,
+  .about-valeurs hr {
+    margin: 0 auto;
+  }
+
   hr {
     width: 50%;
   }
@@ -138,21 +112,6 @@
   .section2 {
     margin: 0rem 0rem 2rem 0rem;
   }
-  .features-valeurs {
-    margin-top: 2rem;
-    grid-template-columns: 1fr;
-    grid-template-rows: 450px;
-  }
-  .liste-header {
-    text-align: left;
-  }
-
-  .titles-valeurs {
-    margin-top: 215px;
-  }
-  .text-valeurs {
-    margin-top: 180px;
-  }
 }
 @media (max-width: 900px) {
   .section {
@@ -162,15 +121,20 @@
   .section-about {
     padding: 0 0 5rem 0;
   }
-  .about hr {
-    margin: 0 auto;
-  }
+
   .about-4 h2 {
     margin: 15px;
   }
   .about-4 hr {
     width: 30%;
     margin: 0 auto;
+  }
+  .text-valeurs {
+    margin: 20px;
+    line-height: 2;
+  }
+  .carousel-valeurs .changeHidden-valeurs .element-valeurs {
+    font-size: 30px;
   }
   .centerH {
     margin-bottom: 2rem !important;
@@ -240,7 +204,7 @@
     font-size: 17px;
   }
   .features__titles {
-    margin-top: 0px;
+    margin-top: 20px;
   }
   .features__titles .liste-header {
     font-size: 16px;
@@ -260,8 +224,18 @@
     margin-top: 30px;
     margin-bottom: 25px;
   }
-  .text-valeurs {
-    margin-top: 50px;
+  .valeurs {
+    width: 80%;
+  }
+  .phraseSlide-valeurs,
+  .cadre-valeurs {
+    height: 25rem;
+  }
+  .carousel-valeurs {
+    height: 29.5rem;
+  }
+  .carousel-valeurs .changeHidden-valeurs .element-valeurs {
+    font-size: 25px;
   }
   .section3 {
     margin: 0rem 0rem 3rem 0rem;
@@ -300,6 +274,9 @@
   footer {
     height: 200px;
   }
+  .items-footer {
+    margin: 0;
+  }
   .item-brand {
     margin: 10px;
     width: 70px;
@@ -322,6 +299,21 @@
     margin: 12px;
   }
 }
+@media screen and (max-width: 575px) {
+  .phraseSlide-valeurs,
+  .cadre-valeurs {
+    height: 15rem;
+  }
+  .phraseSlide-valeurs {
+    opacity: 0.8;
+  }
+  .carousel-valeurs {
+    height: 19.5rem;
+  }
+  .carousel-valeurs .changeHidden-valeurs .element-valeurs {
+    font-size: 20px;
+  }
+}
 @media screen and (max-width: 420px) {
   .header {
     height: 4rem;
@@ -339,24 +331,33 @@
     margin: 1px;
   }
 
-  .about h2 {
+  .about h2,
+  .about-valeurs h2 {
     font-size: 21px;
     width: 94%;
-    // margin: 0 auto;
     text-align: center;
   }
-  .features-valeurs {
-    grid-template-rows: 270px;
+  .valeurs {
+    width: 90%;
   }
-
   .text-valeurs {
-    margin-top: 80px;
+    padding: 0.5rem;
   }
-
+  .list-valeurs {
+    margin: 15px;
+  }
+  .carousel-valeurs .changeHidden-valeurs .element-valeurs {
+    font-size: 17px;
+  }
   #row [class^="col-"]:not(:last-child) {
     margin-bottom: 2rem;
   }
   .items-socialmedia {
     width: 80%;
+  }
+}
+@media screen and (max-width: 345px) {
+  .carousel-valeurs .changeHidden-valeurs .element-valeurs {
+    font-size: 15px;
   }
 }

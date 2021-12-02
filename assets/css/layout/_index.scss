@@ -2,6 +2,21 @@ body.dark-theme {
   background-color: #2b2b2b;
   color: white;
 }
+/*========== Button Dark/Light ==========*/
+.change-theme {
+  position: absolute;
+  right: 1rem;
+  top: 1.8rem;
+  color: #c7d1cc;
+  font-size: 1rem;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .change-theme {
+    position: initial;
+    margin-left: 1rem;
+  }
+}
 /*===== BASE =====*/
 *,
 ::before,
@@ -32,9 +47,6 @@ a {
 .bd-grid {
   display: grid;
   grid-template-columns: 100%;
-}
-.nav__dark {
-  display: none;
 }
 
 /******************* Main *************************/
@@ -121,9 +133,9 @@ hr {
   margin: 2rem 0rem 30rem 0rem;
   padding: 0.5rem;
 }
-.section2 {
-  margin: 0rem 0rem 20rem 0rem;
-}
+// .section2 {
+//   margin: 0rem 0rem 20rem 0rem;
+// }
 .section3 {
   margin: 0rem 0rem 33rem 0rem;
 }
@@ -153,6 +165,7 @@ hr {
   align-self: center;
   justify-self: center;
   font-size: 1.4rem;
+  color: $first-color;
 }
 .features__feature p {
   font-size: 20px;
@@ -181,18 +194,115 @@ hr {
 .feature-text a {
   color: $first-color;
 }
+//------------------slide--------------------------------//
+.phraseSlide-valeurs {
+  height: 30rem;
+  width: 100%;
+  opacity: 0.9;
+  background: url(./assets/img/apprentissage-enfant.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.cadre-valeurs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 30rem;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+  background: rgba(55, 55, 55, 0.3);
+  color: white;
+}
+.centre {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -2.25rem;
+}
+.carousel-valeurs {
+  position: relative;
+  width: 100%;
+  height: 33.5rem;
+  text-align: center;
+  line-height: 45px;
+}
+.carousel-valeurs .changeHidden-valeurs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  height: 13rem;
+  line-height: 13rem;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-valeurs .changeHidden-valeurs .contenant-valeurs {
+  position: relative;
+  animation: carousel 12s ease-in-out infinite;
+}
+
+.carousel-valeurs .changeHidden-valeurs .element-valeurs {
+  font-weight: 700;
+  font-size: 40px;
+}
+@keyframes carousel {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+  25%,
+  45% {
+    transform: translateY(-13rem);
+  }
+  50%,
+  70% {
+    transform: translateY(-26rem);
+  }
+  75%,
+  95% {
+    transform: translateY(-39rem);
+  }
+  100% {
+    transform: translateY(-52rem);
+  }
+}
+.about-valeurs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.about-valeurs h2 {
+  font-size: 30px;
+  font-family: $titles-font;
+  margin: 15px;
+}
+.valeurs {
+  display: flex;
+  justify-content: center;
+  background: #f1f1f1;
+  border: 1px solid #9c9c9c;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+  width: 65%;
+  margin: 30px auto 50px;
+}
 .text-valeurs {
-  margin-top: 70px;
-  line-height: 1.9;
+  margin: 30px;
+  line-height: 2.2;
+}
+.list-valeurs {
   list-style-type: disc;
 }
 li::marker {
   color: $first-color;
+  padding: 10px;
 }
-.title-mission {
-  margin-top: 0 !important;
-}
-
 /******************fonctionnement *******************/
 #row {
   max-width: 65rem;
@@ -222,9 +332,11 @@ li::marker {
 .about-4 h2 {
   font-size: 30px;
   font-family: $titles-font;
+  margin: 20px;
 }
 .features__fonction {
   color: $first-color;
+  margin-bottom: 20px;
 }
 .paragraphe:not(:last-child) {
   margin-bottom: 3rem;
