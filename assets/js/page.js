@@ -1,15 +1,15 @@
 // =================Btn Toggle====================//
-// const btnMenus = document.querySelector(".header__contact");
-// const menu = document.querySelector(".nav-logo");
+// const btnMenus = document.querySelector(".header__logo");
+// const menus = document.querySelector(".nav-logo");
 
 // btnMenus.addEventListener("click", () => {
-//   menu.classList.toggle("active");
+//   menus.classList.toggle("active");
 // });
 
-// const allLinks = document.querySelector(".contact-slogan");
+// const allLink = document.querySelector(".contact-slogan");
 
-// allLinks.addEventListener("click", () => {
-//   menu.classList.remove("active");
+// allLink.addEventListener("click", () => {
+//   menus.classList.remove("active");
 // });
 
 // ------------------Slider nos actions---------------------//
