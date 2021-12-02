@@ -2841,7 +2841,7 @@ h5 {
     opacity: 0.8;
   }
   .carousel-valeurs {
-    height: 19.5rem;
+    height: 18rem;
   }
   .carousel-valeurs .changeHidden-valeurs .element-valeurs {
     font-size: 20px;
@@ -2878,6 +2878,10 @@ h5 {
   }
   .list-valeurs {
     margin: 15px;
+  }
+  .phraseSlide-valeurs,
+  .cadre-valeurs {
+    height: 25rem;
   }
   .carousel-valeurs .changeHidden-valeurs .element-valeurs {
     font-size: 17px;
