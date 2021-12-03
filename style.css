@@ -524,6 +524,40 @@ li::marker {
           transform: scale(0.95);
 }
 
+/******************partenaires*******************/
+.items-partenaires {
+  margin: 30px 100px 100px 100px;
+}
+
+.title-partenaires {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.grid-partenaires {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+}
+
+.txt-partenaires {
+  font-weight: 400;
+}
+
+.txt-partenaires strong {
+  color: #cb1b23;
+  font-weight: 600;
+}
+
+.txt-partenaires a {
+  color: #000;
+  font-weight: 600;
+}
+
 /*===== HEADER =====*/
 .header {
   position: fixed;
@@ -888,7 +922,7 @@ body {
   .img-contact {
     width: 75%;
     height: auto;
-    margin: 0 auto;
+    margin: 20px auto;
   }
   .text-contact {
     margin: 0 auto;
@@ -925,6 +959,9 @@ body {
   }
   .img-contact {
     width: 85%;
+  }
+  .text-contact h3 {
+    margin-top: 25px;
   }
   .items-mail a {
     font-size: 18px;
@@ -1017,6 +1054,7 @@ body {
 @media screen and (max-width: 600px) {
   .title-newsletter {
     font-size: 22px;
+    margin-top: 20px;
   }
   .text-newsletter {
     font-size: 16px;
@@ -2770,6 +2808,9 @@ h5 {
   .section3 {
     margin: 0rem 0rem 3rem 0rem;
   }
+  .section4 {
+    margin: 0rem 0rem 7rem 0rem;
+  }
   .about-4 {
     display: block;
     margin-top: -15px;
@@ -2830,6 +2871,9 @@ h5 {
   .items-socialmedia ul li {
     margin: 12px;
   }
+  .items-partenaires {
+    margin: 30px 50px 80px 50px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -2845,6 +2889,16 @@ h5 {
   }
   .carousel-valeurs .changeHidden-valeurs .element-valeurs {
     font-size: 20px;
+  }
+  .items-partenaires {
+    margin: 30px 45px 33px 45px;
+  }
+  .grid-partenaires {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 15px;
   }
 }
 
@@ -2891,6 +2945,13 @@ h5 {
   }
   .items-socialmedia {
     width: 80%;
+  }
+  .title-partenaires {
+    margin-bottom: 20px;
+    font-size: 21px;
+  }
+  .items-partenaires {
+    margin: 30px 30px 33px 30px;
   }
 }
 

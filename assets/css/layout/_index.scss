@@ -375,3 +375,28 @@ li::marker {
 .composition:hover .composition_photo:not(:hover) {
   transform: scale(0.95);
 }
+/******************partenaires*******************/
+.items-partenaires {
+  margin: 30px 100px 100px 100px;
+}
+.title-partenaires {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+.grid-partenaires {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 15px;
+}
+.txt-partenaires {
+  font-weight: 400;
+}
+.txt-partenaires strong {
+  color: $first-color;
+  font-weight: 600;
+}
+.txt-partenaires a {
+  color: #000;
+  font-weight: 600;
+}

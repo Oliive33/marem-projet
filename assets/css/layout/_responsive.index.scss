@@ -240,6 +240,10 @@
   .section3 {
     margin: 0rem 0rem 3rem 0rem;
   }
+  .section4 {
+    margin: 0rem 0rem 7rem 0rem;
+  }
+
   .about-4 {
     display: block;
     margin-top: -15px;
@@ -298,6 +302,9 @@
   .items-socialmedia ul li {
     margin: 12px;
   }
+  .items-partenaires {
+    margin: 30px 50px 80px 50px;
+  }
 }
 @media screen and (max-width: 575px) {
   .phraseSlide-valeurs,
@@ -312,6 +319,14 @@
   }
   .carousel-valeurs .changeHidden-valeurs .element-valeurs {
     font-size: 20px;
+  }
+  .items-partenaires {
+    margin: 30px 45px 33px 45px;
+  }
+  .grid-partenaires {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
   }
 }
 @media screen and (max-width: 420px) {
@@ -358,6 +373,13 @@
   }
   .items-socialmedia {
     width: 80%;
+  }
+  .title-partenaires {
+    margin-bottom: 20px;
+    font-size: 21px;
+  }
+  .items-partenaires {
+    margin: 30px 30px 33px 30px;
   }
 }
 @media screen and (max-width: 345px) {

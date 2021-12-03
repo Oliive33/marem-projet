@@ -80,7 +80,7 @@ body {
   .img-contact {
     width: 75%;
     height: auto;
-    margin: 0 auto;
+    margin: 20px auto;
   }
   .text-contact {
     margin: 0 auto;
@@ -112,6 +112,9 @@ body {
   }
   .img-contact {
     width: 85%;
+  }
+  .text-contact h3 {
+    margin-top: 25px;
   }
   .items-mail a {
     font-size: 18px;
@@ -194,6 +197,7 @@ body {
 @media screen and (max-width: 600px) {
   .title-newsletter {
     font-size: 22px;
+    margin-top: 20px;
   }
 
   .text-newsletter {
