@@ -105,3 +105,10 @@ onglets.forEach((onglet) => {
     }
   });
 });
+// ==================Input Event===================//
+const inputName = document.querySelector('input[type="number"]');
+const select = document.querySelector(".dons-mount");
+
+document.getElementById("dons").addEventListener("input", (event) => {
+  select.innerHTML = event.target.value;
+});

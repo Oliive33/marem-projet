@@ -377,8 +377,20 @@ li::marker {
 }
 /******************partenaires*******************/
 .items-partenaires {
-  margin: 30px 100px 100px 100px;
+  margin: 30px 100px 60px 100px;
 }
+.partenaire-group {
+  display: grid;
+  row-gap: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.partenaires-description a {
+  text-decoration: none;
+  color: $first-color;
+  cursor: pointer;
+}
+
 .title-partenaires {
   margin-bottom: 30px;
   font-size: 24px;

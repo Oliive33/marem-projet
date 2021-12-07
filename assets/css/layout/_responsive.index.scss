@@ -31,7 +31,7 @@
     margin: 2rem 0rem 4rem 0rem;
   }
   .features__titles {
-    margin-top: 0px;
+    margin: 50px 0 50px 0;
   }
   .titles-valeurs {
     margin-top: 25px;
@@ -43,7 +43,7 @@
     padding: 0rem;
   }
   .section3 {
-    margin: 0rem 0rem 3rem 0rem;
+    margin: 0rem 0rem 13rem 0rem;
   }
   #row .col-1-of-2 {
     padding: 1.2rem;
@@ -117,9 +117,20 @@
   .section {
     margin: 2rem 0rem 6rem 0rem;
   }
+  .section3 {
+    margin: 0rem 0rem 5rem 0rem;
+  }
 
   .section-about {
     padding: 0 0 5rem 0;
+  }
+  .features {
+    grid-template-rows: 110px;
+    gap: 2rem;
+  }
+
+  .title-mission {
+    margin: 40px 0 40px 0;
   }
 
   .about-4 h2 {
@@ -179,7 +190,7 @@
     margin: 150px 0 0 0;
   }
   h1 {
-    font-size: 18px;
+    font-size: 20px;
     margin: 30px;
   }
   .slideshow {
@@ -190,13 +201,14 @@
     margin: 0;
   }
   .features {
-    gap: 1rem;
+    gap: 3rem;
     margin: 1rem;
   }
 
   .features__header {
-    line-height: 1.6;
+    line-height: 1.5;
     text-align: center;
+    font-size: 18px;
   }
 
   .features__feature {
@@ -204,8 +216,9 @@
     font-size: 17px;
   }
   .features__titles {
-    margin-top: 20px;
+    margin: 100px 0 40px 0;
   }
+
   .features__titles .liste-header {
     font-size: 16px;
     text-align: left;
