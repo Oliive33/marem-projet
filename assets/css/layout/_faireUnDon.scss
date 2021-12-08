@@ -668,7 +668,6 @@ change color of titles and background .accordion-open .questions__header,
   background: $first-color;
   z-index: -1;
   border-radius: 3px;
-  // border: 8px solid #f1f1f1;
 }
 .btn-focus-anim:hover::before {
   transform: scaleY(1.2) scaleX(1.05);

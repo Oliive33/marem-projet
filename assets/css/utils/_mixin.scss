@@ -1,3 +1,11 @@
+// main
+@mixin titles-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 // Nos centres d'accueil
 
 @mixin titles-centres {
@@ -6,6 +14,7 @@
   font-weight: 700;
   font-size: 21px;
 }
+
 @mixin grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -105,7 +105,6 @@
   .features__header {
     text-align: center;
   }
-
   .feature-but {
     grid-template-columns: 1fr;
   }
@@ -113,6 +112,30 @@
     margin: 0rem 0rem 2rem 0rem;
   }
 }
+@media (max-width: 990px) {
+  .about-marem h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .items-marem {
+    row-gap: 1.5rem;
+  }
+  .img-marem {
+    width: 100%;
+  }
+  .items-marem {
+    grid-template-columns: 1fr;
+  }
+  .txt-marem {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .txt2-marem {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 900px) {
   .section {
     margin: 2rem 0rem 6rem 0rem;
@@ -179,6 +202,9 @@
     top: 1rem;
     left: 0;
     transform: scale(1.1);
+  }
+  .txt-objectif {
+    margin-left: 0px;
   }
 }
 
@@ -254,16 +280,26 @@
     margin: 0rem 0rem 3rem 0rem;
   }
   .section4 {
-    margin: 0rem 0rem 7rem 0rem;
+    margin: 0rem 0rem 10rem 0rem;
   }
 
-  .about-4 {
+  .about-4,
+  .about-marem {
     display: block;
     margin-top: -15px;
     margin-bottom: 0px;
   }
   .about-4 h2 {
     text-align: center;
+  }
+  .about-marem hr {
+    margin: 0 auto;
+  }
+  .items-marem-objectifs h3 {
+    margin: 30px 0px 10px 0px;
+  }
+  .img-marem {
+    margin-top: 30px;
   }
 
   #row {
@@ -341,7 +377,19 @@
     grid-template-columns: 1fr;
     row-gap: 15px;
   }
+  .section6-maremfrance {
+    margin: 60px 25px 60px 25px;
+  }
+  .items-socialmedia {
+    width: 60%;
+  }
 }
+@media screen and (max-width: 450px) {
+  .link-rapport-activite {
+    padding: 25px 50px;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .header {
     height: 4rem;
@@ -398,5 +446,9 @@
 @media screen and (max-width: 345px) {
   .carousel-valeurs .changeHidden-valeurs .element-valeurs {
     font-size: 15px;
+  }
+  .link-rapport-activite {
+    padding: 25px 30px;
+    font-size: 22px;
   }
 }

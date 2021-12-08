@@ -271,10 +271,7 @@ hr {
   }
 }
 .about-valeurs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
+  @include titles-secondary;
 }
 .about-valeurs h2 {
   font-size: 30px;
@@ -411,4 +408,86 @@ li::marker {
 .txt-partenaires a {
   color: #000;
   font-weight: 600;
+}
+/******************marem france*******************/
+.section6-maremfrance {
+  margin: 30px 100px 60px 100px;
+}
+
+.about-marem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.about-marem h2 {
+  font-size: 30px;
+  font-family: $titles-font;
+  margin: 15px;
+}
+.items-marem {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.5rem;
+  row-gap: 3rem;
+  padding: 10px;
+}
+.img-marem {
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 3px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+}
+.txt-marem {
+  font-weight: 500;
+  line-height: 1.7;
+  width: 90%;
+}
+.txt2-marem {
+  margin-left: 30px;
+}
+.txt-marem strong {
+  color: $first-color;
+  font-weight: bold;
+  font-size: 20px;
+}
+.items-marem-objectifs h3 {
+  font-family: $titles-font;
+  color: $first-color;
+  margin: 15px 0 20px 30px;
+}
+.items-marem-objectifs {
+  margin-bottom: 80px;
+}
+.txt-objectif {
+  margin-left: 30px;
+  line-height: 1.7;
+  width: 100%;
+}
+.rapport-activite {
+  text-align: center;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.rapport-activite:hover,
+.link-rapport-activite:hover {
+  transform: scale(0.95);
+  color: #000;
+}
+.link-rapport-activite {
+  background: #f1f1f1;
+  color: #333;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 25px 110px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: $first-color;
+  outline: none;
+  border: none;
+  box-shadow: 3px 5px 14px -1px rgba(94, 94, 94, 0.75);
+  color: #f1f1f1;
+  transition: all 0.3s ease-in-out;
 }
