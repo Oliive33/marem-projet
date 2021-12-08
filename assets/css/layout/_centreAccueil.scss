@@ -98,14 +98,17 @@ body {
   line-height: 1.8;
   margin: 0 auto;
   font-size: 16px;
+  font-weight: 500;
 }
 .text-centre-accueil2 {
   margin-top: 20px;
+  font-weight: 500;
 }
 .titles-woezon {
   @include titles-centres;
   color: $first-color;
   font-family: $titles-font;
+  margin-bottom: 15px;
 }
 .circle {
   width: 200px;
@@ -130,19 +133,22 @@ body {
   font-size: 21px;
   color: $first-color;
   font-family: $titles-font;
+  margin-bottom: 15px;
 }
 .text-centre-emera {
   text-align: right;
+  font-weight: 500;
 }
 .text-centre2 {
   width: 80%;
   line-height: 2.1;
   margin: 0 auto;
+  font-weight: 500;
 }
 .circle2 {
   width: 200px;
   height: 200px;
-  background: url(./assets/img/centre-accueil.webp);
+  background: url(./assets/img/portraits-enfants.png);
   background-size: 100% 100%;
   border-radius: 50%;
   shape-outside: circle();

@@ -71,7 +71,7 @@ main {
   height: 400px;
 }
 
-h1 {
+.titre-index {
   margin-bottom: 100px;
   text-align: center;
   padding: 1.5rem;
@@ -79,7 +79,7 @@ h1 {
   font-family: "Roboto", sans-serif;
 }
 
-h1 strong {
+.titre-index strong {
   color: #cb1b23;
 }
 
@@ -387,7 +387,7 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .about-valeurs h2 {
@@ -428,29 +428,6 @@ li::marker {
 }
 
 /******************fonctionnement *******************/
-#row {
-  max-width: 65rem;
-  margin: 0 auto;
-}
-
-#row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-#row [class^="col-"] {
-  float: left;
-}
-
-#row[class^="col-"]:not(:last-child) {
-  margin-right: 2rem;
-}
-
-#row .col-1-of-2 {
-  width: calc((100% - 2rem) / 2);
-}
-
 .about-4 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,6 +451,29 @@ li::marker {
 .features__fonction {
   color: #cb1b23;
   margin-bottom: 20px;
+}
+
+#row {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+#row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#row [class^="col-"] {
+  float: left;
+}
+
+#row[class^="col-"]:not(:last-child) {
+  margin-right: 2rem;
+}
+
+#row .col-1-of-2 {
+  width: calc((100% - 2rem) / 2);
 }
 
 .paragraphe:not(:last-child) {
@@ -598,6 +598,14 @@ li::marker {
   margin: 15px;
 }
 
+.about-marem hr {
+  width: 22%;
+  height: 2px;
+  border-radius: 5px;
+  border: none;
+  background: #cb1b23;
+}
+
 .items-marem {
   display: -ms-grid;
   display: grid;
@@ -610,7 +618,7 @@ li::marker {
 }
 
 .img-marem {
-  width: 350px;
+  width: 490px;
   height: auto;
   margin: 0 auto;
   border-radius: 3px;
@@ -965,12 +973,27 @@ body {
   text-transform: uppercase;
 }
 
+.titre-principal-contact {
+  margin-top: 170px;
+  text-align: center;
+}
+
+.title-team {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+
+.title-team strong {
+  color: #cb1b23;
+}
+
 .items-contact {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  margin: 10rem 0 0 1rem;
+  margin: 4rem 0 0 1rem;
 }
 
 .img-contact {
@@ -987,7 +1010,7 @@ body {
 }
 
 .img-contact {
-  width: 500px;
+  width: 95%;
   height: auto;
   -webkit-box-shadow: 3px 6px 11px 0px rgba(58, 57, 57, 0.75);
           box-shadow: 3px 6px 11px 0px rgba(58, 57, 57, 0.75);
@@ -1000,15 +1023,13 @@ body {
 }
 
 .text-contact h3 {
-  color: #0e1026;
-  -webkit-transition: color 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out;
+  color: #cb1b23;
   font-weight: bolder;
   font-family: "Roboto", sans-serif;
 }
 
-.text-contact h3:hover {
-  color: #cb1b23;
+.text-contact .text-contact2 {
+  margin-bottom: 15px;
 }
 
 .items-mail {
@@ -1042,6 +1063,7 @@ body {
     display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    margin: 3rem 0 0 0rem;
   }
   .img-contact {
     width: 75%;
@@ -1057,6 +1079,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .titre-principal-contact {
+    margin-top: 190px;
+    font-family: "Roboto", sans-serif;
+  }
+  .title-team {
+    font-size: 28px;
+  }
   .img-contact {
     width: 95%;
   }
@@ -1078,6 +1107,9 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  .titre-principal-contact {
+    margin-top: 120px;
+  }
   .title-contact-principal {
     font-size: 22px;
   }
@@ -1098,7 +1130,7 @@ body {
 
 @media screen and (max-width: 420px) {
   .items-contact {
-    margin: 6rem 0 0 0rem;
+    margin: 2rem 0 0 0rem;
   }
 }
 
@@ -1120,6 +1152,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -1135,6 +1168,7 @@ body {
 
 .text-newsletter {
   font-size: 18px;
+  font-weight: 500;
   width: 100%;
   margin: 0 auto;
   padding: 1rem;
@@ -1327,10 +1361,12 @@ body {
   line-height: 1.8;
   margin: 0 auto;
   font-size: 16px;
+  font-weight: 500;
 }
 
 .text-centre-accueil2 {
   margin-top: 20px;
+  font-weight: 500;
 }
 
 .titles-woezon {
@@ -1340,6 +1376,7 @@ body {
   font-size: 21px;
   color: #cb1b23;
   font-family: "Roboto", sans-serif;
+  margin-bottom: 15px;
 }
 
 .circle {
@@ -1369,22 +1406,25 @@ body {
   font-size: 21px;
   color: #cb1b23;
   font-family: "Roboto", sans-serif;
+  margin-bottom: 15px;
 }
 
 .text-centre-emera {
   text-align: right;
+  font-weight: 500;
 }
 
 .text-centre2 {
   width: 80%;
   line-height: 2.1;
   margin: 0 auto;
+  font-weight: 500;
 }
 
 .circle2 {
   width: 200px;
   height: 200px;
-  background: url(./assets/img/centre-accueil.webp);
+  background: url(./assets/img/portraits-enfants.png);
   background-size: 100% 100%;
   border-radius: 50%;
   shape-outside: circle();
@@ -1521,6 +1561,7 @@ body {
   padding: 10px;
   line-height: 1.8;
   margin: 0 auto;
+  font-weight: 500;
 }
 
 .link-benevolat {
@@ -1592,6 +1633,7 @@ body {
   padding: 10px;
   line-height: 1.8;
   margin: 0 auto;
+  font-weight: 500;
 }
 
 .item-action {
@@ -1649,7 +1691,6 @@ body {
 @media screen and (max-width: 1300px) {
   .txt-par {
     font-size: 23px;
-    margin: 0 30px;
   }
 }
 
@@ -1663,7 +1704,6 @@ body {
   }
   .txt-par {
     font-size: 20px;
-    margin: 20px 15px;
   }
 }
 
@@ -1674,9 +1714,6 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 425px;
-  }
-  .txt-par {
-    margin: 35px 15px;
   }
 }
 
@@ -1709,6 +1746,7 @@ body {
   padding: 10px;
   line-height: 1.8;
   margin: 0 auto;
+  font-weight: 500;
 }
 
 .txt-projet-secondary {
@@ -1716,6 +1754,7 @@ body {
   margin: 0 auto;
   line-height: 1.9;
   text-align: center;
+  font-weight: 500;
 }
 
 .items-projets-a-venir {
@@ -1733,6 +1772,7 @@ body {
   padding: 10px;
   line-height: 1.8;
   margin: 0 auto;
+  font-weight: 500;
 }
 
 .txt-projet-a-venir::first-letter,
@@ -1741,6 +1781,7 @@ body {
 .txt-benevolat::first-letter,
 .txt-projet-secondary::first-letter {
   color: #cb1b23;
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1772,6 +1813,12 @@ body {
   .txt-benevolat,
   .txt-sensibilisation {
     width: 85%;
+  }
+  .txt-projet-secondary {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.9;
+    text-align: left;
   }
   .links-docs {
     -webkit-box-orient: vertical;
@@ -1880,6 +1927,10 @@ body {
 .title-don-slogan span:hover::after {
   width: 45%;
   max-width: 1300px;
+}
+
+.nav-menu-item strong {
+  color: #cb1b23;
 }
 
 .title-don {
@@ -2157,6 +2208,7 @@ change color of titles and background .accordion-open .questions__header,
   width: 80%;
   margin: 0 auto;
   line-height: 1.6;
+  font-weight: 500;
 }
 
 .txt-don a {
@@ -3094,7 +3146,7 @@ h5 {
   main {
     margin: 140px 0 0 0;
   }
-  h1 {
+  .titre-index {
     margin-bottom: 35px;
   }
   .about,
@@ -3231,7 +3283,7 @@ h5 {
   main {
     margin: 150px 0 0 0;
   }
-  h1 {
+  .titre-index {
     font-size: 20px;
     margin: 30px;
   }
@@ -3265,7 +3317,7 @@ h5 {
   }
   .feature-text {
     width: 95%;
-    line-height: 1.6;
+    line-height: 1.8;
     margin: 0 auto;
     padding: 1rem;
   }
@@ -3432,7 +3484,7 @@ h5 {
   main {
     margin: 75px 0 0 0;
   }
-  h1 {
+  .titre-index {
     margin: 1px;
   }
   .about h2,
@@ -3493,12 +3545,18 @@ h5 {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .circle,
-  .circle2 {
+  .circle {
     width: 100%;
     height: 450px;
     border-radius: 5px;
     /* shape-outside: circle(); */
+    float: none;
+    margin: 30px auto;
+  }
+  .circle2 {
+    width: 80%;
+    height: 450px;
+    border-radius: 3px;
     float: none;
     margin: 30px auto;
   }

@@ -37,44 +37,8 @@ body {
   object-fit: cover;
 }
 .commandes {
-  // top: 0px;
-  // width: 100%;
-  // height: 100%;
-  // position: absolute;
   visibility: hidden;
 }
-
-// .commandes button {
-//   position: absolute;
-//   width: 45px;
-//   height: 45px;
-//   border-radius: 50%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   cursor: pointer;
-//   background: rgba(203, 27, 36, 0.329);
-// }
-// .commandes img {
-//   width: 15px;
-//   position: relative;
-// }
-// .commandes button:nth-child(1) {
-//   top: 50%;
-//   transform: translateY(-50%);
-//   left: 5px;
-// }
-// .commandes button:nth-child(2) {
-//   top: 50%;
-//   transform: translateY(-50%);
-//   right: 5px;
-// }
-// .commandes button:nth-child(1) img {
-//   left: -2px;
-// }
-// .commandes button:nth-child(2) img {
-//   right: -2px;
-// }
 
 .cercles {
   position: absolute;
@@ -130,6 +94,7 @@ body {
 }
 .txt-benevolat {
   @include actions-txt;
+  font-weight: 500;
 }
 .link-benevolat {
   text-align: center;
@@ -177,6 +142,7 @@ body {
 }
 .txt-sensibilisation {
   @include actions-txt;
+  font-weight: 500;
 }
 .item-action {
   display: flex;
@@ -216,7 +182,6 @@ body {
 @media screen and (max-width: 1300px) {
   .txt-par {
     font-size: 23px;
-    margin: 0 30px;
   }
 }
 @media screen and (max-width: 700px) {
@@ -227,22 +192,17 @@ body {
   .section-parallax {
     background: url(./assets/img/enfants-jardins.webp) no-repeat center / cover
       fixed;
-    // flex-direction: column;
     height: 350px;
   }
 
   .txt-par {
     font-size: 20px;
-    margin: 20px 15px;
   }
 }
 @media screen and (max-width: 450px) {
   .section-parallax {
     flex-direction: column;
     height: 425px;
-  }
-  .txt-par {
-    margin: 35px 15px;
   }
 }
 // **************projets en cours**************//
@@ -265,12 +225,14 @@ body {
   padding: 10px;
   line-height: 1.8;
   margin: 0 auto;
+  font-weight: 500;
 }
 .txt-projet-secondary {
   width: 70%;
   margin: 0 auto;
   line-height: 1.9;
   text-align: center;
+  font-weight: 500;
 }
 // **************projets a venir**************//
 .items-projets-a-venir {
@@ -281,6 +243,7 @@ body {
   padding: 10px;
   line-height: 1.8;
   margin: 0 auto;
+  font-weight: 500;
 }
 .txt-projet-a-venir::first-letter,
 .txt-projet-en-cours::first-letter,
@@ -288,6 +251,7 @@ body {
 .txt-benevolat::first-letter,
 .txt-projet-secondary::first-letter {
   color: $first-color;
+  font-weight: bolder;
 }
 @media screen and (max-width: 1024px) {
   .item-action {
@@ -309,9 +273,16 @@ body {
     display: grid;
     grid-template-columns: 1fr;
   }
+
   .txt-benevolat,
   .txt-sensibilisation {
     width: 85%;
+  }
+  .txt-projet-secondary {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.9;
+    text-align: left;
   }
   .links-docs {
     flex-direction: column;

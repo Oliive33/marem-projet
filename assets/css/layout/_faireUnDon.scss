@@ -49,6 +49,9 @@ body {
   width: 45%;
   max-width: 1300px;
 }
+.nav-menu-item strong {
+  color: $first-color;
+}
 .title-don {
   background: #f1f1f1;
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
@@ -276,6 +279,7 @@ change color of titles and background .accordion-open .questions__header,
   width: 80%;
   margin: 0 auto;
   line-height: 1.6;
+  font-weight: 500;
 }
 .txt-don a {
   color: $first-color;
