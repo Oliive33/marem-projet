@@ -387,6 +387,7 @@ hr {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .about-valeurs h2 {
@@ -570,6 +571,115 @@ li::marker {
 .txt-partenaires a {
   color: #000;
   font-weight: 600;
+}
+
+/******************marem france*******************/
+.section6-maremfrance {
+  margin: 30px 100px 60px 100px;
+}
+
+.about-marem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
+.about-marem h2 {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  margin: 15px;
+}
+
+.items-marem {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 1.5rem;
+          column-gap: 1.5rem;
+  row-gap: 3rem;
+  padding: 10px;
+}
+
+.img-marem {
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+.txt-marem {
+  font-weight: 500;
+  line-height: 1.7;
+  width: 90%;
+}
+
+.txt2-marem {
+  margin-left: 30px;
+}
+
+.txt-marem strong {
+  color: #cb1b23;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.items-marem-objectifs h3 {
+  font-family: "Roboto", sans-serif;
+  color: #cb1b23;
+  margin: 15px 0 20px 30px;
+}
+
+.items-marem-objectifs {
+  margin-bottom: 80px;
+}
+
+.txt-objectif {
+  margin-left: 30px;
+  line-height: 1.7;
+  width: 100%;
+}
+
+.rapport-activite {
+  text-align: center;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.rapport-activite:hover,
+.link-rapport-activite:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  color: #000;
+}
+
+.link-rapport-activite {
+  background: #f1f1f1;
+  color: #333;
+  font-size: 25px;
+  font-weight: 700;
+  padding: 25px 110px;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #cb1b23;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 3px 5px 14px -1px rgba(94, 94, 94, 0.75);
+          box-shadow: 3px 5px 14px -1px rgba(94, 94, 94, 0.75);
+  color: #f1f1f1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /*===== HEADER =====*/
@@ -3017,6 +3127,30 @@ h5 {
   }
 }
 
+@media (max-width: 990px) {
+  .about-marem h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  .items-marem {
+    row-gap: 1.5rem;
+  }
+  .img-marem {
+    width: 100%;
+  }
+  .items-marem {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .txt-marem {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .txt2-marem {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 900px) {
   .section {
     margin: 2rem 0rem 6rem 0rem;
@@ -3084,6 +3218,9 @@ h5 {
     left: 0;
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
+  }
+  .txt-objectif {
+    margin-left: 0px;
   }
 }
 
@@ -3156,15 +3293,25 @@ h5 {
     margin: 0rem 0rem 3rem 0rem;
   }
   .section4 {
-    margin: 0rem 0rem 7rem 0rem;
+    margin: 0rem 0rem 10rem 0rem;
   }
-  .about-4 {
+  .about-4,
+  .about-marem {
     display: block;
     margin-top: -15px;
     margin-bottom: 0px;
   }
   .about-4 h2 {
     text-align: center;
+  }
+  .about-marem hr {
+    margin: 0 auto;
+  }
+  .items-marem-objectifs h3 {
+    margin: 30px 0px 10px 0px;
+  }
+  .img-marem {
+    margin-top: 30px;
   }
   #row {
     padding: 1rem;
@@ -3247,6 +3394,18 @@ h5 {
         grid-template-columns: 1fr;
     row-gap: 15px;
   }
+  .section6-maremfrance {
+    margin: 60px 25px 60px 25px;
+  }
+  .items-socialmedia {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .link-rapport-activite {
+    padding: 25px 50px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -3305,6 +3464,10 @@ h5 {
 @media screen and (max-width: 345px) {
   .carousel-valeurs .changeHidden-valeurs .element-valeurs {
     font-size: 15px;
+  }
+  .link-rapport-activite {
+    padding: 25px 30px;
+    font-size: 22px;
   }
 }
 
