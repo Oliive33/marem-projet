@@ -1,22 +1,3 @@
-body.dark-theme {
-  background-color: #2b2b2b;
-  color: white;
-}
-/*========== Button Dark/Light ==========*/
-.change-theme {
-  position: absolute;
-  right: 1rem;
-  top: 1.8rem;
-  color: #c7d1cc;
-  font-size: 1rem;
-  cursor: pointer;
-}
-@media screen and (min-width: 768px) {
-  .change-theme {
-    position: initial;
-    margin-left: 1rem;
-  }
-}
 /*===== BASE =====*/
 *,
 ::before,
@@ -130,16 +111,8 @@ hr {
   background: $first-color;
 }
 .section {
-  margin: 2rem 0rem 30rem 0rem;
   padding: 0.5rem;
 }
-// .section2 {
-//   margin: 0rem 0rem 20rem 0rem;
-// }
-.section3 {
-  margin: 0rem 0rem 33rem 0rem;
-}
-
 .features {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -159,6 +132,7 @@ hr {
   height: auto;
   box-shadow: $images-ombres;
   transition: 0.2s ease-in-out;
+  border-radius: 2px;
 }
 
 .features__feature {
@@ -179,7 +153,7 @@ hr {
   align-items: center;
   justify-content: start;
   margin-bottom: 1rem;
-  margin-top: 150px;
+  // margin-top: 150px;
 }
 .features__titles .liste-header {
   line-height: 1.7;
@@ -190,6 +164,7 @@ hr {
 }
 .feature-text {
   line-height: 1.8;
+  font-weight: 500;
 }
 .feature-text a {
   color: $first-color;
@@ -296,6 +271,7 @@ hr {
 .text-valeurs {
   margin: 30px;
   line-height: 2.2;
+  font-weight: 500;
 }
 .list-valeurs {
   list-style-type: disc;
@@ -338,6 +314,9 @@ li::marker {
 }
 #row .col-1-of-2 {
   width: calc((100% - 2rem) / 2);
+}
+.paragraphe {
+  font-weight: 500;
 }
 .paragraphe:not(:last-child) {
   margin-bottom: 3rem;
