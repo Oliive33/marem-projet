@@ -1,0 +1,116 @@
+@media screen and (max-width: 1300px) {
+  .txt-par {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .item-action {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .title-actions {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .item-action {
+    margin-top: 50px;
+  }
+  .items-sensibilisation {
+    padding: 0;
+  }
+  .titre-projet-en-cours {
+    font-size: 20px;
+  }
+  .projets-cours {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .txt-benevolat,
+  .txt-sensibilisation {
+    width: 85%;
+  }
+  .txt-projet-secondary {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.9;
+    text-align: left;
+  }
+  .links-docs {
+    flex-direction: column;
+
+    .link-doc {
+      font-size: 18px;
+      margin: 10px;
+    }
+    .link-doc1 {
+      padding: 15px 80px;
+    }
+  }
+  .txt-sensibilisation {
+    width: 85%;
+  }
+
+  .section-parallax {
+    background: url(./assets/img/enfants-jardins.webp) no-repeat center / cover
+      fixed;
+    height: 350px;
+  }
+
+  .txt-par {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .slider {
+    margin: 0px auto 0;
+  }
+  .cercles {
+    top: 95%;
+  }
+  .txt-benevolat,
+  .txt-sensibilisation {
+    width: 100%;
+  }
+  .section-parallax {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .txt-projet-en-cours,
+  .txt-projet-a-venir {
+    width: 100%;
+    line-height: 1.6;
+  }
+  .txt-projet-secondary {
+    width: 100%;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 450px) {
+  .section-parallax {
+    flex-direction: column;
+    height: 425px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .title-actions {
+    font-size: 20px;
+  }
+  .txt-benevolat {
+    padding: 5px;
+  }
+  .links-docs {
+    .link-doc {
+      margin: 10px;
+    }
+    .link-doc1 {
+      padding: 20px 50px;
+    }
+    .link-doc2 {
+      padding: 20px 5px;
+    }
+  }
+}
