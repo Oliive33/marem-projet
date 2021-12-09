@@ -2738,6 +2738,24 @@ h5 {
   height: 40px;
 }
 
+.creator {
+  margin: 10px auto;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.creator .link-creator {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 16px;
+}
+
+.creator .link-creator:hover {
+  -webkit-transform: scale(1.55);
+          transform: scale(1.55);
+}
+
 /* --------------------Scroll up-------------------- */
 .scrollup {
   position: fixed;
@@ -3103,7 +3121,7 @@ h5 {
             transform: scale(1.4);
   }
   footer {
-    height: 200px;
+    height: 220px;
   }
   .items-footer {
     margin: 0;
