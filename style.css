@@ -2087,7 +2087,7 @@ change color of titles and background .accordion-open .questions__header,
     height: 1250px;
     border: none;
     text-align: center;
-    margin: 20px;
+    margin: 0px;
   }
 }
 
