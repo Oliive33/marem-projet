@@ -2583,6 +2583,7 @@ change color of titles and background .accordion-open .questions__header,
   }
   .title-don {
     width: 95%;
+    font-size: 18px;
   }
   .questions__group {
     width: 85%;
