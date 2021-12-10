@@ -29,7 +29,7 @@ body {
 }
 .slider-centres {
   width: 100%;
-  height: 50vh;
+  height: 85vh;
   position: relative;
   overflow: hidden;
 }
@@ -43,7 +43,7 @@ body {
 
 .slider-item-centres img {
   width: 100%;
-  height: 50vh;
+  height: 85vh;
   object-fit: cover;
   border-radius: 2px;
   opacity: 1;
@@ -74,6 +74,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
 }
 .item-centre-accueil .dash-titles {
   width: 27%;
