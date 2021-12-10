@@ -344,6 +344,12 @@
   }
 }
 @media screen and (max-width: 575px) {
+  .slideshow {
+    height: 50vh;
+  }
+  .slideshow-item img {
+    height: 50vh;
+  }
   .phraseSlide-valeurs,
   .cadre-valeurs {
     height: 15rem;
