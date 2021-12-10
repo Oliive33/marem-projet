@@ -2808,6 +2808,14 @@ h5 {
 }
 
 @media screen and (max-width: 450px) {
+  .slider {
+    height: 420px;
+  }
+  .cont-slides img {
+    height: 420px;
+    -o-object-fit: inherit;
+       object-fit: inherit;
+  }
   .container-accueil {
     padding: 10px;
   }
@@ -2837,6 +2845,14 @@ h5 {
 }
 
 @media screen and (max-width: 380px) {
+  .slider {
+    height: 360px;
+  }
+  .cont-slides img {
+    height: 360px;
+    -o-object-fit: inherit;
+       object-fit: inherit;
+  }
   .circle,
   .circle2 {
     height: 255px;
