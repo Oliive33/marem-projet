@@ -1,0 +1,251 @@
+//---------------------Responsive style------------------------//
+@media screen and (max-width: 1024px) {
+  .title-don-slogan {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .title-don-slogan span:hover::after {
+    width: 55%;
+  }
+  .txt-don-choice {
+    margin: -25px auto 70px;
+  }
+  .cartes {
+    grid-template-columns: 1fr;
+  }
+  .carte {
+    cursor: pointer;
+    width: 530px;
+    height: 390px;
+
+    margin: 20px auto;
+  }
+  .recto,
+  .verso {
+    width: 530px;
+    height: 390px;
+  }
+
+  .recto img {
+    width: 530px;
+    height: 390px;
+  }
+  .link-hello-asso {
+    margin: 100px;
+  }
+  .link-hello-asso a {
+    padding: 25px 120px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .title-don-slogan span:hover::after {
+    width: 60%;
+  }
+  .title-don-principal {
+    font-size: 30px;
+  }
+  .title-don {
+    margin: 30px auto 30px;
+    width: 85%;
+  }
+  .txt-don {
+    line-height: 1.6;
+  }
+  .questions__title {
+    text-align: center;
+  }
+  .link-hello-asso {
+    margin: 70px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .title-don-slogan span:hover::after {
+    width: 70%;
+  }
+  .txt-don-choice {
+    font-size: 21px;
+  }
+  .questions__title {
+    padding: 1rem 0 0 0rem;
+    font-size: 23px;
+  }
+  .btn-fermer-slider {
+    width: 45px;
+    height: 45px;
+    font-size: 19px;
+  }
+  .btn-left,
+  .btn-right {
+    width: 40px;
+    height: 40px;
+  }
+  .btn-left img,
+  .btn-right img {
+    width: 20px;
+    height: 20px;
+  }
+  .img-visible-slider {
+    width: 95%;
+    height: 500px;
+  }
+  .link-hello-asso {
+    margin: 60px;
+  }
+  .link-hello-asso a {
+    padding: 30px 15px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .title-don-slogan {
+    font-size: 20px;
+  }
+  .questions__group {
+    width: 70%;
+  }
+
+  .title-don-principal {
+    font-size: 25px;
+  }
+  .txt-don {
+    width: 90%;
+  }
+  .txt-don-choice {
+    margin: 50px auto;
+  }
+  .carte {
+    cursor: pointer;
+    width: 480px;
+    height: 400px;
+    margin: 45px auto;
+  }
+  .recto,
+  .verso {
+    width: 480px;
+    height: 400px;
+  }
+
+  .recto img {
+    width: 480px;
+    height: 400px;
+  }
+  .link-hello-asso {
+    width: 80%;
+    margin: 100px auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title-don-slogan span:hover::after {
+    width: 85%;
+  }
+  .questions__title {
+    padding: 2rem 0.5rem 0 0.5rem;
+    font-size: 22px;
+  }
+  .carte {
+    cursor: pointer;
+    width: 380px;
+    height: 320px;
+    margin: 25px auto;
+  }
+  .recto,
+  .verso {
+    width: 380px;
+    height: 320px;
+  }
+
+  .recto img {
+    width: 380px;
+    height: 320px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .container-don {
+    margin-top: 120px;
+  }
+  .title-don-slogan {
+    padding: 0.5rem;
+    font-size: 17px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .title-don-slogan span:hover::after {
+    width: 80%;
+  }
+  .title-don {
+    width: 95%;
+    font-size: 18px;
+  }
+  .questions__group {
+    width: 85%;
+  }
+  .txt-don {
+    width: 95%;
+  }
+
+  .link-hello-asso a {
+    padding: 25px 10px;
+  }
+  .carte {
+    cursor: pointer;
+    width: 320px;
+    height: 280px;
+    margin: 25px auto;
+  }
+  .recto,
+  .verso {
+    width: 320px;
+    height: 280px;
+  }
+
+  .recto img {
+    width: 320px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container-don {
+    margin-top: 100px;
+  }
+  .title-don-slogan span:hover::after {
+    width: 85%;
+  }
+  .grid-item {
+    margin: 31px 45px;
+  }
+  .txt-don-choice {
+    margin: 30px auto;
+  }
+  .questions__title {
+    font-size: 19px;
+  }
+  .carte {
+    cursor: pointer;
+    width: 300px;
+    height: 255px;
+    margin: 35px auto;
+  }
+  .recto,
+  .verso {
+    width: 300px;
+    height: 255px;
+  }
+
+  .recto img {
+    width: 300px;
+    height: 255px;
+  }
+  .recto span {
+    padding: 15px 7px;
+    font-size: 19px;
+  }
+  .link-hello-asso {
+    width: 90%;
+    margin: 50px auto;
+  }
+}
+@media screen and (max-width: 350px) {
+  .title-don-slogan span:hover::after {
+    width: 0;
+  }
+}
