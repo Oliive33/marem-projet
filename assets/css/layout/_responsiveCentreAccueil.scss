@@ -55,8 +55,11 @@
 }
 
 @media screen and (max-width: 450px) {
-  .slider {
-    height: 420px;
+  .slider-centres {
+    height: 50vh;
+  }
+  .slider-item-centres img {
+    height: 50vh;
   }
 
   .cont-slides img {
@@ -91,13 +94,15 @@
     font-size: 18px;
   }
 }
-@media screen and (max-width: 380px) {
-  .slider {
-    height: 360px;
+@media screen and (max-width: 420px) {
+  .container-global {
+    padding: 0;
+    margin-top: 70px;
   }
-
+}
+@media screen and (max-width: 380px) {
   .cont-slides img {
-    height: 360px;
+    height: 350px;
     object-fit: inherit;
   }
   .circle,

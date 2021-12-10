@@ -94,8 +94,14 @@
     flex-direction: column;
     height: 425px;
   }
+  .slider {
+    height: 420px;
+  }
 }
 @media screen and (max-width: 400px) {
+  .slider {
+    height: 350px;
+  }
   .title-actions {
     font-size: 20px;
   }

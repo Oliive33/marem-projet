@@ -2808,8 +2808,11 @@ h5 {
 }
 
 @media screen and (max-width: 450px) {
-  .slider {
-    height: 420px;
+  .slider-centres {
+    height: 50vh;
+  }
+  .slider-item-centres img {
+    height: 50vh;
   }
   .cont-slides img {
     height: 420px;
@@ -2844,12 +2847,16 @@ h5 {
   }
 }
 
-@media screen and (max-width: 380px) {
-  .slider {
-    height: 360px;
+@media screen and (max-width: 420px) {
+  .container-global {
+    padding: 0;
+    margin-top: 70px;
   }
+}
+
+@media screen and (max-width: 380px) {
   .cont-slides img {
-    height: 360px;
+    height: 350px;
     -o-object-fit: inherit;
        object-fit: inherit;
   }
@@ -2963,9 +2970,15 @@ h5 {
             flex-direction: column;
     height: 425px;
   }
+  .slider {
+    height: 420px;
+  }
 }
 
 @media screen and (max-width: 400px) {
+  .slider {
+    height: 350px;
+  }
   .title-actions {
     font-size: 20px;
   }
