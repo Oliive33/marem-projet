@@ -2075,7 +2075,7 @@ change color of titles and background .accordion-open .questions__header,
 
 .link-hello-asso {
   text-align: center;
-  margin: 120px 100px 120px 100px;
+  margin: 0px 100px 150px 100px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
