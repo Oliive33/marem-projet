@@ -63,6 +63,24 @@ body {
   margin: 80px auto 100px;
   color: $first-color;
 }
+.video {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  border-radius: 4px;
+}
+@media screen and (max-width: 600px) {
+  .video {
+    width: 420px;
+    height: 280px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .video {
+    width: 325px;
+    height: 270px;
+  }
+}
 .grille-portfolio {
   width: 90%;
   max-width: 1100px;

@@ -1922,6 +1922,31 @@ body {
   color: #cb1b23;
 }
 
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px auto;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .video {
+    width: 420px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .video {
+    width: 325px;
+    height: 270px;
+  }
+}
+
 .grille-portfolio {
   width: 90%;
   max-width: 1100px;
