@@ -1,0 +1,255 @@
+/*===== BASE =====*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: $header-height 0 0 0;
+  font-family: $body-font;
+  font-weight: 600;
+  background-color: #fcfcfc;
+  max-width: 1440px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+/******************fonctionnement *******************/
+.section4 {
+  margin-top: 10rem;
+}
+
+.about-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.about-4 h1,
+.about-4 h2 {
+  font-size: 30px;
+  font-family: $titles-font;
+  margin: 20px;
+}
+.features__fonction {
+  color: $first-color;
+  margin-bottom: 20px;
+}
+#row {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+#row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#row [class^="col-"] {
+  float: left;
+}
+#row[class^="col-"]:not(:last-child) {
+  margin-right: 2rem;
+}
+#row .col-1-of-2 {
+  width: calc((100% - 2rem) / 2);
+}
+.paragraphe {
+  font-weight: 500;
+}
+.paragraphe:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.composition {
+  position: relative;
+}
+.composition_photo {
+  width: 55%;
+  box-shadow: 0 1.5rem 3.3rem rgba(139, 117, 117, 0.4);
+  border-radius: 1px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline-offset: 1rem;
+}
+.composition_photo--1 {
+  left: 30px;
+  top: 2rem;
+}
+.composition_photo--2 {
+  right: -55px;
+  top: 5rem;
+}
+.composition_photo--3 {
+  left: 20%;
+  top: 13rem;
+}
+
+.composition_photo:hover {
+  outline: 2px solid $first-color;
+  transform: scale(1.05) translateY(-0.6rem);
+  box-shadow: 0 2.5rem, 2rem rgba(63, 63, 63, 0.5);
+  z-index: 30;
+}
+.composition:hover .composition_photo:not(:hover) {
+  transform: scale(0.95);
+}
+/******************partenaires*******************/
+.items-partenaires {
+  margin: 30px 100px 60px 100px;
+}
+.partenaire-group {
+  display: grid;
+  row-gap: 1.5rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.partenaires-description a {
+  text-decoration: none;
+  color: $first-color;
+  cursor: pointer;
+}
+
+.title-partenaires {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+.grid-partenaires {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  column-gap: 15px;
+}
+.txt-partenaires {
+  font-weight: 400;
+}
+.txt-partenaires strong {
+  color: $first-color;
+  font-weight: 600;
+}
+.txt-partenaires a {
+  color: #000;
+  font-weight: 600;
+}
+// ==============Responsive Marem Togo==================//
+@media screen and (max-width: 1200px) {
+  #row .col-1-of-2 {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-4 h1,
+  .about-4 h2 {
+    margin: 15px;
+  }
+  .about-4 hr {
+    width: 30%;
+    margin: 0 auto;
+  }
+  #row {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+  #row [class^="col-"]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 6rem;
+  }
+  #row [class^="col-"] {
+    width: 100% !important;
+  }
+  .composition_photo {
+    float: left;
+    position: relative;
+    width: 33.333333%;
+  }
+  .composition_photo--1 {
+    top: 0;
+    transform: scale(1.2);
+  }
+  .composition_photo--2 {
+    top: -1rem;
+    transform: scale(1.3);
+    z-index: 20;
+  }
+  .composition_photo--3 {
+    top: 1rem;
+    left: 0;
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .section4 {
+    margin: 10rem 0rem 10rem 0rem;
+  }
+
+  .about-4 {
+    display: block;
+    margin-top: -15px;
+    margin-bottom: 0px;
+  }
+  .about-4 h1,
+  .about-4 h2 {
+    text-align: center;
+  }
+
+  #row {
+    padding: 1rem;
+  }
+
+  .paragraphe:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .composition_photo--1 {
+    top: 47px;
+    left: 67px;
+    transform: scale(1.4);
+  }
+  .composition_photo--2 {
+    top: -3rem;
+    right: 0px;
+    transform: scale(1.4);
+  }
+  .composition_photo--3 {
+    top: 2rem;
+    left: -3rem;
+    transform: scale(1.4);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .items-partenaires {
+    margin: 30px 45px 33px 45px;
+  }
+  .grid-partenaires {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+  }
+  .partenaires-description {
+    padding: 1.5rem 1.25rem 1.25rem 1.25rem;
+    line-height: 1.6;
+  }
+
+  .partenaire-group {
+    display: grid;
+    row-gap: 1.5rem;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  #row [class^="col-"]:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .title-partenaires {
+    margin-bottom: 20px;
+    font-size: 21px;
+  }
+  .items-partenaires {
+    margin: 30px 30px 33px 30px;
+  }
+}

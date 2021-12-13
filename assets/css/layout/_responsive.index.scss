@@ -1,15 +1,3 @@
-@media screen and (max-width: 750px) {
-  header {
-    padding: 0 3rem;
-  }
-  .header__logo img {
-    top: 25px;
-  }
-  .nav__img {
-    margin-top: 10px;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   hr {
     width: 20%;
@@ -33,9 +21,7 @@
   .section {
     padding: 0rem;
   }
-  #row .col-1-of-2 {
-    padding: 1.2rem;
-  }
+
   .items-socialmedia {
     width: 35%;
   }
@@ -100,29 +86,6 @@
     margin: 0rem 0rem 2rem 0rem;
   }
 }
-@media (max-width: 990px) {
-  .about-marem h2 {
-    font-size: 25px;
-    text-align: center;
-  }
-
-  .items-marem {
-    row-gap: 1.5rem;
-  }
-  .img-marem {
-    width: 100%;
-  }
-  .items-marem {
-    grid-template-columns: 1fr;
-  }
-  .txt-marem {
-    width: 100%;
-    margin-top: 15px;
-  }
-  .txt2-marem {
-    margin-left: 0;
-  }
-}
 
 @media (max-width: 900px) {
   .section {
@@ -144,13 +107,6 @@
     margin: 40px 0 40px 0;
   }
 
-  .about-4 h2 {
-    margin: 15px;
-  }
-  .about-4 hr {
-    width: 30%;
-    margin: 0 auto;
-  }
   .text-valeurs {
     margin: 20px;
     line-height: 2;
@@ -161,42 +117,18 @@
   .centerH {
     margin-bottom: 2rem !important;
   }
-  #row {
-    max-width: 50rem;
-    padding: 0 3rem;
-  }
-  #row [class^="col-"]:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 6rem;
-  }
-  #row [class^="col-"] {
-    width: 100% !important;
-  }
-  .composition_photo {
-    float: left;
-    position: relative;
-    width: 33.333333%;
-  }
-  .composition_photo--1 {
-    top: 0;
-    transform: scale(1.2);
-  }
-  .composition_photo--2 {
-    top: -1rem;
-    transform: scale(1.3);
-    z-index: 20;
-  }
-  .composition_photo--3 {
-    top: 1rem;
-    left: 0;
-    transform: scale(1.1);
-  }
-  .txt-objectif {
-    margin-left: 0px;
-  }
 }
 
 @media screen and (max-width: 750px) {
+  header {
+    padding: 0 3rem;
+  }
+  .header__logo img {
+    top: 25px;
+  }
+  .nav__img {
+    margin-top: 10px;
+  }
   .header {
     height: 7rem;
   }
@@ -267,51 +199,7 @@
   .section3 {
     margin: 0rem 0rem 3rem 0rem;
   }
-  .section4 {
-    margin: 0rem 0rem 10rem 0rem;
-  }
 
-  .about-4,
-  .about-marem {
-    display: block;
-    margin-top: -15px;
-    margin-bottom: 0px;
-  }
-  .about-4 h2 {
-    text-align: center;
-  }
-  .about-marem hr {
-    margin: 0 auto;
-  }
-  .items-marem-objectifs h3 {
-    margin: 30px 0px 10px 0px;
-  }
-  .img-marem {
-    margin-top: 30px;
-  }
-
-  #row {
-    padding: 1rem;
-  }
-
-  .paragraphe:not(:last-child) {
-    margin-bottom: 2rem;
-  }
-  .composition_photo--1 {
-    top: 47px;
-    left: 67px;
-    transform: scale(1.4);
-  }
-  .composition_photo--2 {
-    top: -3rem;
-    right: 0px;
-    transform: scale(1.4);
-  }
-  .composition_photo--3 {
-    top: 2rem;
-    left: -3rem;
-    transform: scale(1.4);
-  }
   footer {
     height: 220px;
   }
@@ -363,35 +251,9 @@
   .carousel-valeurs .changeHidden-valeurs .element-valeurs {
     font-size: 20px;
   }
-  .items-partenaires {
-    margin: 30px 45px 33px 45px;
-  }
-  .grid-partenaires {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 15px;
-  }
-  .partenaires-description {
-    padding: 1.5rem 1.25rem 1.25rem 1.25rem;
-    line-height: 1.6;
-  }
 
-  .partenaire-group {
-    display: grid;
-    row-gap: 1.5rem;
-    width: 100%;
-    margin: 0;
-  }
-  .section6-maremfrance {
-    margin: 60px 25px 60px 25px;
-  }
   .items-socialmedia {
     width: 60%;
-  }
-}
-@media screen and (max-width: 450px) {
-  .link-rapport-activite {
-    padding: 25px 50px;
   }
 }
 
@@ -434,26 +296,13 @@
   .carousel-valeurs .changeHidden-valeurs .element-valeurs {
     font-size: 17px;
   }
-  #row [class^="col-"]:not(:last-child) {
-    margin-bottom: 2rem;
-  }
+
   .items-socialmedia {
     width: 80%;
-  }
-  .title-partenaires {
-    margin-bottom: 20px;
-    font-size: 21px;
-  }
-  .items-partenaires {
-    margin: 30px 30px 33px 30px;
   }
 }
 @media screen and (max-width: 345px) {
   .carousel-valeurs .changeHidden-valeurs .element-valeurs {
     font-size: 15px;
-  }
-  .link-rapport-activite {
-    padding: 25px 30px;
-    font-size: 22px;
   }
 }
