@@ -132,16 +132,23 @@ body {
   width: 50%;
   margin: 30px auto 90px;
 }
-.footer__input {
-  width: 70%;
-  padding: 0 0.5rem;
+
+.footer__button {
+  width: 100%;
+  text-align: center;
   background: #efefef;
   color: $dark-color;
   border: none;
   outline: none;
   border-radius: 5px;
+  padding: 2rem 2rem;
+  font-size: 25px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
-
-.footer__button {
-  padding: 1rem;
+.footer__button:hover {
+  transform: scale(0.97);
+  background: $dark-color;
+  color: #e0e0e0;
+  font-weight: 700;
 }

@@ -35,6 +35,10 @@
   .img-contact {
     width: 95%;
   }
+  .footer__button {
+    padding: 1rem 1rem;
+    font-size: 21px;
+  }
   .items-mail {
     margin-top: 50px;
   }
@@ -58,15 +62,7 @@
   }
   .footer__subscribe {
     width: 95%;
-    flex-direction: column;
     padding: 1.6rem;
-  }
-  .footer__input {
-    width: 100%;
-    padding: 1.1875rem 0.5rem;
-    background: #efefef;
-    color: $dark-color;
-    margin-bottom: 10px;
   }
 }
 

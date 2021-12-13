@@ -690,6 +690,9 @@ body {
 }
 
 @media screen and (max-width: 420px) {
+  .about-4 {
+    margin-top: -40px;
+  }
   #row [class^="col-"]:not(:last-child) {
     margin-bottom: 2rem;
   }
@@ -1309,18 +1312,27 @@ body {
   margin: 30px auto 90px;
 }
 
-.footer__input {
-  width: 70%;
-  padding: 0 0.5rem;
+.footer__button {
+  width: 100%;
+  text-align: center;
   background: #efefef;
   color: #0e1026;
   border: none;
   outline: none;
   border-radius: 5px;
+  padding: 2rem 2rem;
+  font-size: 25px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
-.footer__button {
-  padding: 1rem;
+.footer__button:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  background: #0e1026;
+  color: #e0e0e0;
+  font-weight: 700;
 }
 
 /*===== BASE =====*/
@@ -3347,6 +3359,10 @@ h5 {
   .img-contact {
     width: 95%;
   }
+  .footer__button {
+    padding: 1rem 1rem;
+    font-size: 21px;
+  }
   .items-mail {
     margin-top: 50px;
   }
@@ -3374,18 +3390,7 @@ h5 {
   }
   .footer__subscribe {
     width: 95%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     padding: 1.6rem;
-  }
-  .footer__input {
-    width: 100%;
-    padding: 1.1875rem 0.5rem;
-    background: #efefef;
-    color: #0e1026;
-    margin-bottom: 10px;
   }
 }
 

@@ -242,6 +242,9 @@ body {
 }
 
 @media screen and (max-width: 420px) {
+  .about-4 {
+    margin-top: -40px;
+  }
   #row [class^="col-"]:not(:last-child) {
     margin-bottom: 2rem;
   }
