@@ -3050,6 +3050,9 @@ h5 {
   .text-centre-emera {
     text-align: left;
   }
+  .img-centre-woezon {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 820px) {
@@ -3066,6 +3069,16 @@ h5 {
   }
   .text-centre-accueil {
     width: 85%;
+  }
+  .img-centre-woezon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 80%;
+    height: auto;
   }
 }
 
@@ -3116,12 +3129,27 @@ h5 {
     line-height: 1.5;
     font-size: 18px;
   }
+  h4 {
+    width: 90%;
+    margin: 15px auto;
+    font-size: 18px;
+  }
+  .img-centre-woezon {
+    width: 90%;
+    margin: 10px auto;
+  }
 }
 
 @media screen and (max-width: 420px) {
   .container-global {
     padding: 0;
     margin-top: 70px;
+  }
+  .text-centre-accueil {
+    width: 90%;
+  }
+  .text-centre2 {
+    width: 90%;
   }
 }
 
