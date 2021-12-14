@@ -1,4 +1,3 @@
-// ------------------Slider nos actions---------------------//
 const imgs = document.querySelectorAll(".cont-slides img");
 const suivant = document.querySelector(".right");
 const precedent = document.querySelector(".left");
@@ -8,12 +7,12 @@ let index = 0;
 suivant.addEventListener("click", slideSuivante);
 
 function slideSuivante() {
-  if (index < 2) {
+  if (index < 3) {
     imgs[index].classList.remove("active");
     index++;
     imgs[index].classList.add("active");
-  } else if (index === 2) {
-    imgs[index].classlist.remove("active");
+  } else if (index === 3) {
+    imgs[index].classList.remove("active");
     index = 0;
     imgs[index].classList.add("active");
   }
@@ -26,6 +25,7 @@ function slideSuivante() {
     }
   }
 }
+
 precedent.addEventListener("click", slidePrecedente);
 
 function slidePrecedente() {
@@ -34,11 +34,10 @@ function slidePrecedente() {
     index--;
     imgs[index].classList.add("active");
   } else if (index === 0) {
-    imgs[index].classlist.remove("active");
-    index = 2;
+    imgs[index].classList.remove("active");
+    index = 3;
     imgs[index].classList.add("active");
   }
-
   for (i = 0; i < cercles.length; i++) {
     if (cercles[i].getAttribute("data-clic") - 1 === index) {
       cercles[i].classList.add("active-cercle");
@@ -56,7 +55,9 @@ function keyPressed(e) {
     slideSuivante();
   }
 }
+
 // Cercles
+
 cercles.forEach((cercle) => {
   cercle.addEventListener("click", function () {
     for (i = 0; i < cercles.length; i++) {
