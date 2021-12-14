@@ -15,58 +15,48 @@ body {
   margin: 0 auto;
 }
 /* --------------------Main-------------------- */
-.slider {
+.slider-actions {
   width: 100%;
-  height: 500px;
-  margin: 115px auto 0;
+  height: 150vh;
   position: relative;
+  overflow: hidden;
 }
-
-.cont-slides {
-  width: 100%;
-  height: 100%;
-}
-
-.cont-slides img {
-  width: 100%;
-  height: 500px;
+.slider-item-actions {
+  width: inherit;
+  height: inherit;
   position: absolute;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  animation: cycleImagesActions 30s infinite;
+}
+
+.slider-item-actions img {
+  width: 100%;
+  height: 150vh;
   object-fit: cover;
+  border-radius: 2px;
+  opacity: 1;
 }
-.commandes {
-  visibility: hidden;
+.slider-item-actions:nth-child(1),
+.slider-item-actions:nth-child(1) img {
+  animation-delay: 0s;
 }
-
-.cercles {
-  position: absolute;
-  top: 95%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 160px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.slider-item-actions:nth-child(2),
+.slider-item-actions:nth-child(2) img {
+  animation-delay: 8s;
 }
-.cercle {
-  width: 15px;
-  height: 15%;
-  border-radius: 50%;
-  margin: 5px;
-  cursor: pointer;
-  outline: none;
-  border: 0;
+.slider-item-actions:nth-child(3),
+.slider-item-actions:nth-child(3) img {
+  animation-delay: 16s;
 }
 
-.active-cercle {
-  background: $first-color;
+@keyframes cycleImagesActions {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0.2;
+  }
 }
-.active {
-  opacity: 1 !important;
-}
-
 /* --------------------Bénévolat-------------------- */
 .items-benevolats {
   @include actions-backgrounds;
@@ -218,4 +208,99 @@ body {
 .txt-projet-secondary::first-letter {
   color: $first-color;
   font-weight: bolder;
+}
+/* --------------------Slider emera-------------------- */
+.title-slider-emera {
+  color: $first-color;
+  font-size: 25px;
+  font-weight: 700;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  margin-top: 50px;
+}
+.slider-emera {
+  width: 700px;
+  height: 500px;
+  margin: 40px auto 0;
+  position: relative;
+}
+
+.cont-slides {
+  width: 100%;
+  height: 100%;
+}
+
+.cont-slides img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  border-radius: 4px;
+}
+.commandes {
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.commandes button {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.commandes img {
+  width: 15px;
+  position: relative;
+}
+.commandes button:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+}
+.commandes button:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+}
+.commandes button:nth-child(1) img {
+  left: -2px;
+}
+.commandes button:nth-child(2) img {
+  right: -2px;
+}
+
+.cercles {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cercle {
+  width: 15px;
+  height: 15%;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid #333;
+}
+
+.active-cercle {
+  background: $first-color;
+}
+.active {
+  opacity: 1 !important;
 }

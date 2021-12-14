@@ -2,9 +2,22 @@
   .txt-par {
     font-size: 23px;
   }
+  .slider-actions {
+    height: 90vh;
+  }
+  .slider-item-actions img {
+    height: 90vh;
+  }
 }
 
 @media screen and (max-width: 1024px) {
+  .slider-actions {
+    height: 80vh;
+  }
+  .slider-item-actions img {
+    height: 80vh;
+  }
+
   .item-action {
     flex-direction: column;
     padding: 30px;
@@ -13,7 +26,29 @@
     font-size: 30px;
   }
 }
+@media screen and (max-width: 915px) {
+  .title-slider-emera {
+    font-size: 23px;
+    width: 80%;
+    text-align: center;
+    margin: 50px auto;
+  }
+  .slider-emera {
+    height: 400px;
+  }
+  .cercles {
+    top: 90%;
+  }
+}
+
 @media screen and (max-width: 700px) {
+  .slider-actions {
+    height: 70vh;
+  }
+  .slider-item-actions img {
+    height: 70vh;
+  }
+
   .item-action {
     margin-top: 50px;
   }
@@ -62,14 +97,35 @@
   .txt-par {
     font-size: 20px;
   }
+  .slider-emera {
+    width: 600px;
+    margin: 30px auto 0;
+  }
+
+  .cercles {
+    top: 75%;
+  }
 }
-@media screen and (max-width: 500px) {
-  .slider {
-    margin: 0px auto 0;
+@media screen and (max-width: 600px) {
+  .slider-emera {
+    width: 490px;
+    height: 300px;
+  }
+  .cont-slides img {
+    height: 300px;
   }
   .cercles {
-    top: 95%;
+    top: 90%;
   }
+}
+@media screen and (max-width: 500px) {
+  .slider-actions {
+    height: 50vh;
+  }
+  .slider-item-actions img {
+    height: 50vh;
+  }
+
   .txt-benevolat,
   .txt-sensibilisation {
     width: 100%;
@@ -88,20 +144,41 @@
     width: 100%;
     text-align: left;
   }
+  .slider-emera {
+    width: 425px;
+  }
+  .commandes button:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+  }
+  .commandes button:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5px;
+  }
 }
 @media screen and (max-width: 450px) {
   .section-parallax {
     flex-direction: column;
     height: 425px;
   }
-  .slider {
-    height: 420px;
+  .title-slider-emera {
+    font-size: 20px;
+    width: 95%;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .slider-emera {
+    width: 350px;
+    height: 300px;
+    margin: 10px auto 0;
+  }
+  .cont-slides img {
+    height: 300px;
   }
 }
 @media screen and (max-width: 400px) {
-  .slider {
-    height: 350px;
-  }
   .title-actions {
     font-size: 20px;
   }
@@ -118,5 +195,15 @@
     .link-doc2 {
       padding: 20px 5px;
     }
+  }
+}
+@media screen and (max-width: 375px) {
+  .slider-emera {
+    width: 320px;
+    height: 265px;
+    margin: 5px auto 0;
+  }
+  .cont-slides img {
+    height: 265px;
   }
 }

@@ -125,6 +125,24 @@ body {
 .container-secondaire-woezon {
   @include grid-container;
 }
+h4 {
+  width: 80%;
+  margin: 5px auto;
+  font-size: 19px;
+  color: $first-color;
+  font-weight: bold;
+}
+.img-centre-woezon {
+  width: 60%;
+  height: 250px;
+  margin: 10px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+.img-centre-woezon:hover {
+  transform: scale(0.95);
+}
 // *************************Centre emera**************************//
 
 .titles-emera {

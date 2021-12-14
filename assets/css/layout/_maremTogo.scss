@@ -132,10 +132,22 @@ body {
   color: #000;
   font-weight: 600;
 }
+/******************location*******************/
+.map {
+  display: flex;
+  justify-content: center;
+  border: 3px;
+}
+
 // ==============Responsive Marem Togo==================//
 @media screen and (max-width: 1200px) {
   #row .col-1-of-2 {
     padding: 1.2rem;
+  }
+}
+@media (max-width: 1024px) {
+  .about-4 hr {
+    width: 25%;
   }
 }
 
@@ -217,6 +229,9 @@ body {
     left: -3rem;
     transform: scale(1.4);
   }
+  .map {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -238,6 +253,14 @@ body {
     row-gap: 1.5rem;
     width: 100%;
     margin: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .map {
+    margin-top: 30px;
+  }
+  .mappy {
+    height: 300px;
   }
 }
 
