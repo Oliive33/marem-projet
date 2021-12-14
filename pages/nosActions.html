@@ -86,8 +86,21 @@
 
           <div class="nav__menu">
             <ul class="nav__list">
-              <li class="nav__item">
-                <a href="../index.html" class="nav__link">Accueil</a>
+              <li class="nav__item dropdown">
+                <a href="../index.html" class="nav__link"
+                  >Accueil<i class="bx bx-chevron-down dropdown__icon"></i
+                ></a>
+
+                <ul class="dropdown__menu">
+                  <li class="dropdown__item">
+                    <a href="./maremFrance.html" class="nav__link"
+                      >Marem France</a
+                    >
+                  </li>
+                  <li class="dropdown__item">
+                    <a href="./maremTogo.html" class="nav__link">Marem Togo</a>
+                  </li>
+                </ul>
               </li>
 
               <li class="nav__item dropdown">
@@ -143,28 +156,21 @@
       </nav>
     </header>
     <div class="container-actions">
-      <div class="slider">
-        <div class="cont-slides">
-          <img src="../assets/img/apprentissage-enfant.jpg" class="active" />
-          <img src="../assets/img/enfants-jardins.webp" />
-          <img src="../assets/img/benevolats.jpg" />
-        </div>
-        <div class="commandes">
-          <button class="left">
-            <img src="../assets/img/logos/chevron-gauche.svg" />
-          </button>
-          <button class="right">
-            <img src="../assets/img/logos/chevron-droit.svg" />
-          </button>
+      <div class="slider-actions">
+        <div class="slider-item-actions">
+          <img src="../assets/img/benevolats.jpg" alt="image d'enfants" />
         </div>
 
-        <div class="cercles">
-          <button data-clic="1" class="cercle active-cercle"></button>
-          <button data-clic="2" class="cercle"></button>
-          <button data-clic="3" class="cercle"></button>
+        <div class="slider-item-actions">
+          <img src="../assets/img/enfants-jardins.webp" alt="image d'enfants" />
+        </div>
+        <div class="slider-item-actions">
+          <img
+            src="../assets/img/apprentissage-enfant.jpg"
+            alt="image d'enfants"
+          />
         </div>
       </div>
-
       <div class="item-action" id="benevolat">
         <hr / class="dash-titles">
         <h2 class="title-actions">Bénévolat</h2>
@@ -369,6 +375,32 @@
           sous-région.
         </p>
       </div>
+      <h3 class="title-slider-emera">
+        Découvrez une représentation numérique de notre future centre Emera :
+      </h3>
+      <div class="slider-emera">
+        <div class="cont-slides">
+          <img src="../assets/img/future-centre-emera.jpg" class="active" />
+          <img src="../assets/img/future-centre-emera1.jpg" />
+          <img src="../assets/img/future-centre-emera2.jpg" />
+          <img src="../assets/img/future-centre-emera3.jpg" />
+        </div>
+        <div class="commandes">
+          <button class="left">
+            <img src="../assets/img/logos/left.svg" />
+          </button>
+          <button class="right">
+            <img src="../assets/img/logos/right.svg" />
+          </button>
+        </div>
+
+        <div class="cercles">
+          <button data-clic="1" class="cercle active-cercle"></button>
+          <button data-clic="2" class="cercle"></button>
+          <button data-clic="3" class="cercle"></button>
+          <button data-clic="4" class="cercle"></button>
+        </div>
+      </div>
     </div>
 
     <footer>
@@ -449,6 +481,6 @@
     </a>
 
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/actions.js"></script>
+    <script src="../assets/js/action.js"></script>
   </body>
 </html>
