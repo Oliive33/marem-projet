@@ -1702,7 +1702,7 @@ body {
 /* --------------------Bénévolat-------------------- */
 .items-benevolats {
   margin: 20px;
-  padding: 15px;
+  padding: 5px;
   border: 1px solid #9c9c9c;
   border-radius: 5px;
   border: none;
@@ -1789,7 +1789,7 @@ body {
 /* --------------------Sensibilisation-------------------- */
 .items-sensibilisation {
   margin: 20px;
-  padding: 15px;
+  padding: 5px;
   border: 1px solid #9c9c9c;
   border-radius: 5px;
   border: none;
@@ -1821,8 +1821,8 @@ body {
 /* --------------------Section Parallax-------------------- */
 .section-parallax {
   width: 100%;
-  height: 300px;
-  background: url(./assets/img/enfants-jardins.webp) no-repeat right/cover fixed;
+  height: 400px;
+  background: url(./assets/img/enfants-qui-jouent.jpg) no-repeat top/cover fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1842,11 +1842,10 @@ body {
   font-size: 30px;
   font-weight: bold;
   color: #f1f1f1;
-  margin: 0 50px;
   background: rgba(203, 27, 36, 0.719);
   border-radius: 4px;
   border: 0;
-  padding: 15px 20px;
+  padding: 11px 15px;
   text-align: center;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -1860,7 +1859,7 @@ body {
 /* --------------------Projet en cours-------------------- */
 .items-projets-en-cours {
   margin: 20px;
-  padding: 15px;
+  padding: 5px;
   border: 1px solid #9c9c9c;
   border-radius: 5px;
   border: none;
@@ -1901,7 +1900,7 @@ body {
 /* --------------------Projet à venir-------------------- */
 .items-projets-a-venir {
   margin: 20px;
-  padding: 15px;
+  padding: 5px;
   border: 1px solid #9c9c9c;
   border-radius: 5px;
   border: none;
@@ -2391,7 +2390,7 @@ change color of titles and background .accordion-open .questions__header,
 
 .items-don {
   margin: 20px;
-  padding: 15px;
+  padding: 5px;
   border: 1px solid #9c9c9c;
   border-radius: 5px;
   border: none;
@@ -3287,7 +3286,8 @@ h5 {
     width: 85%;
   }
   .section-parallax {
-    background: url(./assets/img/enfants-jardins.webp) no-repeat center/cover fixed;
+    background: url(./assets/img/enfants-qui-jouent.jpg) no-repeat/fixed;
+    background-position: 30%;
     height: 350px;
   }
   .txt-par {
@@ -3377,6 +3377,15 @@ h5 {
   }
   .cont-slides img {
     height: 300px;
+  }
+  .commandes button {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+  }
+  .commandes img {
+    width: 10px;
+    position: relative;
   }
 }
 

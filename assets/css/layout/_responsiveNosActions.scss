@@ -89,8 +89,8 @@
   }
 
   .section-parallax {
-    background: url(./assets/img/enfants-jardins.webp) no-repeat center / cover
-      fixed;
+    background: url(./assets/img/enfants-qui-jouent.jpg) no-repeat / fixed;
+    background-position: 30%;
     height: 350px;
   }
 
@@ -176,6 +176,15 @@
   }
   .cont-slides img {
     height: 300px;
+  }
+  .commandes button {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+  }
+  .commandes img {
+    width: 10px;
+    position: relative;
   }
 }
 @media screen and (max-width: 400px) {
