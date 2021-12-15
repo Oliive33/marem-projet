@@ -137,6 +137,7 @@ body {
   display: flex;
   justify-content: center;
   border: 3px;
+  margin-bottom: 100px;
 }
 
 // ==============Responsive Marem Togo==================//
@@ -215,19 +216,16 @@ body {
     margin-bottom: 2rem;
   }
   .composition_photo--1 {
-    top: 47px;
+    top: 69px;
     left: 67px;
-    transform: scale(1.4);
   }
   .composition_photo--2 {
     top: -3rem;
     right: 0px;
-    transform: scale(1.4);
   }
   .composition_photo--3 {
-    top: 2rem;
-    left: -3rem;
-    transform: scale(1.4);
+    top: 6rem;
+    left: -7rem;
   }
   .map {
     margin-top: 20px;
@@ -235,6 +233,10 @@ body {
 }
 
 @media screen and (max-width: 575px) {
+  .composition_photo--3 {
+    top: 3rem;
+    left: -2rem;
+  }
   .items-partenaires {
     margin: 30px 45px 33px 45px;
   }
@@ -255,6 +257,16 @@ body {
     margin: 0;
   }
 }
+@media screen and (max-width: 500px) {
+  .composition_photo--2 {
+    top: -1rem;
+    right: 12px;
+  }
+  .composition_photo--3 {
+    top: 4rem;
+    left: -4rem;
+  }
+}
 @media screen and (max-width: 450px) {
   .map {
     margin-top: 30px;
@@ -264,13 +276,22 @@ body {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 425px) {
   .about-4 {
     margin-top: -40px;
   }
   #row [class^="col-"]:not(:last-child) {
     margin-bottom: 2rem;
   }
+  .composition_photo--2 {
+    top: -1rem;
+    right: 12px;
+  }
+  .composition_photo--3 {
+    top: 4rem;
+    left: -2rem;
+  }
+
   .title-partenaires {
     margin-bottom: 20px;
     font-size: 21px;

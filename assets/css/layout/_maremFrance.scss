@@ -138,6 +138,10 @@
   .section6-maremfrance {
     margin: 60px 25px 60px 25px;
   }
+  .link-rapport-activite {
+    font-size: 21px;
+    padding: 26px 70px;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -152,6 +156,6 @@
 @media screen and (max-width: 345px) {
   .link-rapport-activite {
     padding: 25px 30px;
-    font-size: 22px;
+    font-size: 21px;
   }
 }
