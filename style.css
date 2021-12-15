@@ -3325,6 +3325,7 @@ h5 {
   .txt-benevolat,
   .txt-sensibilisation {
     width: 100%;
+    line-height: 1.6;
   }
   .section-parallax {
     margin-top: 40px;
@@ -3338,6 +3339,7 @@ h5 {
   .txt-projet-secondary {
     width: 100%;
     text-align: left;
+    line-height: 1.6;
   }
   .slider-emera {
     width: 425px;
@@ -3357,6 +3359,9 @@ h5 {
 }
 
 @media screen and (max-width: 450px) {
+  .title-benevolat {
+    font-size: 21px;
+  }
   .section-parallax {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
