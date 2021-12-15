@@ -3413,8 +3413,11 @@ h5 {
 }
 
 @media screen and (max-width: 375px) {
+  .title-slider-emera {
+    font-size: 19px;
+  }
   .slider-emera {
-    width: 320px;
+    width: 315px;
     height: 265px;
     margin: 5px auto 0;
   }
