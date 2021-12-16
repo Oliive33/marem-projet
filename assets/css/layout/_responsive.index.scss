@@ -297,6 +297,9 @@
     font-size: 17px;
   }
 
+  h5 {
+    font-size: 16px;
+  }
   .items-socialmedia {
     width: 80%;
   }
@@ -304,5 +307,8 @@
 @media screen and (max-width: 345px) {
   .carousel-valeurs .changeHidden-valeurs .element-valeurs {
     font-size: 15px;
+  }
+  h5 {
+    font-size: 14px;
   }
 }
