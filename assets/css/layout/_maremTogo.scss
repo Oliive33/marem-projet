@@ -14,6 +14,21 @@ body {
   min-width: 300px;
   margin: 0 auto;
 }
+.title-maremTogo {
+  background: #f7f7f7;
+  box-shadow: 0 15px 10px rgba(24, 24, 24, 0.2);
+  border-radius: 5px;
+  padding: 15px 25px;
+  width: 60%;
+  margin: 80px auto 50px;
+  line-height: 1.5;
+  font-size: 20px;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+}
+.title-maremTogo:hover {
+  color: $first-color;
+}
 
 /******************fonctionnement *******************/
 .section4 {
@@ -24,7 +39,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: 30px;
 }
 .about-4 h1,
@@ -58,8 +73,19 @@ body {
 .paragraphe {
   font-weight: 500;
 }
+.paragraphe strong {
+  color: $first-color;
+  font-weight: bold;
+  font-size: 19px;
+}
 .paragraphe:not(:last-child) {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+.last-paragraphe {
+  line-height: 1.6;
+}
+.last-paragraphe strong {
+  font-size: 18px;
 }
 .composition {
   position: relative;
@@ -200,7 +226,12 @@ body {
   .section4 {
     margin: 10rem 0rem 10rem 0rem;
   }
-
+  .title-maremTogo {
+    padding: 15px 17px;
+    width: 75%;
+    margin: 50px auto 80px;
+    font-size: 19px;
+  }
   .about-4 {
     display: block;
     margin-top: -15px;
@@ -280,6 +311,14 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+  .section4 {
+    margin: 7rem 0 10rem 0;
+  }
+  .title-maremTogo {
+    padding: 15px 15px;
+    width: 95%;
+    font-size: 17px;
+  }
   .about-4 {
     margin-top: -40px;
   }
