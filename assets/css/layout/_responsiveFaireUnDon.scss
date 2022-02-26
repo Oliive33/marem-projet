@@ -138,9 +138,15 @@
   .title-don-slogan span:hover::after {
     width: 85%;
   }
+  .video {
+    margin: 100px auto 100px;
+  }
   .questions__title {
     padding: 2rem 0.5rem 0 0.5rem;
     font-size: 22px;
+  }
+  .txt-don-choice {
+    font-size: 16px;
   }
   .carte {
     cursor: pointer;
@@ -157,6 +163,10 @@
   .recto img {
     width: 380px;
     height: 320px;
+  }
+  .btn-focus-anim {
+    font-size: 25px;
+    padding: 21px 20px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -180,11 +190,12 @@
     width: 85%;
   }
   .txt-don {
-    width: 95%;
+    width: 80%;
   }
 
   .link-hello-asso a {
     padding: 25px 10px;
+    font-size: 25px;
   }
   .carte {
     cursor: pointer;
@@ -214,7 +225,7 @@
     margin: 31px 45px;
   }
   .txt-don-choice {
-    margin: 30px auto;
+    margin: 15px auto;
   }
   .questions__title {
     font-size: 19px;

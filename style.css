@@ -238,7 +238,7 @@ hr {
   height: 30rem;
   width: 100%;
   opacity: 0.9;
-  background: url(./assets/img/apprentissage-enfant.webp);
+  background: url(./assets/img/apprentissage-enfant.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1295,8 +1295,8 @@ body {
 .items-contact {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 0.7fr 1fr;
+      grid-template-columns: 0.7fr 1fr;
   margin: 4rem 0 0 1rem;
 }
 
@@ -1334,6 +1334,10 @@ body {
 
 .text-contact .text-contact2 {
   margin-bottom: 15px;
+}
+
+.text-contact p {
+  font-size: 14.7px;
 }
 
 .items-mail {
@@ -2519,7 +2523,7 @@ change color of titles and background .accordion-open .questions__header,
   color: #cb1b23;
   background: rgba(241, 241, 241, 0.808);
   padding: 15px 15px;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bolder;
 }
 
@@ -2549,8 +2553,14 @@ change color of titles and background .accordion-open .questions__header,
   background: #f1f1f1;
   padding: 10px 20px;
   margin: 0 auto;
-  width: 75%;
+  width: 85%;
   border-radius: 2px;
+}
+
+.verso-virement .contenu p {
+  width: 95%;
+  padding: 10px 15px;
+  font-size: 14px;
 }
 
 .contenu {
@@ -3619,9 +3629,15 @@ h5 {
   .title-don-slogan span:hover::after {
     width: 85%;
   }
+  .video {
+    margin: 100px auto 100px;
+  }
   .questions__title {
     padding: 2rem 0.5rem 0 0.5rem;
     font-size: 22px;
+  }
+  .txt-don-choice {
+    font-size: 16px;
   }
   .carte {
     cursor: pointer;
@@ -3637,6 +3653,10 @@ h5 {
   .recto img {
     width: 380px;
     height: 320px;
+  }
+  .btn-focus-anim {
+    font-size: 25px;
+    padding: 21px 20px;
   }
 }
 
@@ -3661,10 +3681,11 @@ h5 {
     width: 85%;
   }
   .txt-don {
-    width: 95%;
+    width: 80%;
   }
   .link-hello-asso a {
     padding: 25px 10px;
+    font-size: 25px;
   }
   .carte {
     cursor: pointer;
@@ -3694,7 +3715,7 @@ h5 {
     margin: 31px 45px;
   }
   .txt-don-choice {
-    margin: 30px auto;
+    margin: 15px auto;
   }
   .questions__title {
     font-size: 19px;

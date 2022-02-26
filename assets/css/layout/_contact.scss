@@ -37,7 +37,7 @@ body {
 
 .items-contact {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.7fr 1fr;
   margin: 4rem 0 0 1rem;
 }
 .img-contact {
@@ -64,6 +64,9 @@ body {
   }
   .text-contact2 {
     margin-bottom: 15px;
+  }
+  p {
+    font-size: 14.7px;
   }
 }
 .items-mail {
