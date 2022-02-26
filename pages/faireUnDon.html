@@ -168,15 +168,28 @@
         humaine et sociale.
       </h2>
       <iframe
-        class="video"
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/DfJzDeru7qQ"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
+        id="haWidget"
+        allowtransparency="true"
+        scrolling="auto"
+        src="https://www.helloasso.com/associations/marem%20france/collectes/investir-dans-la-reinsertion-des-enfants-des-rues-du-togo/widget"
+        style="
+          width: 95%;
+          height: 1150px;
+          border: none;
+          text-align: center;
+          margin: 30px 10px 20px 10px;
+        "
+        onload="window.scroll(0, this.offsetTop)"
       ></iframe>
+      <div class="link-hello-asso btn-focus-anim">
+        <a
+          href="https://www.helloasso.com/associations/marem-france/collectes/investir-dans-la-reinsertion-des-enfants-des-rues-du-togo"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Faire un don</a
+        >
+      </div>
+      <!-- --------- -->
 
       <!--==================== explications contribution ====================-->
       <div class="questions question-section" id="faqs">
@@ -328,29 +341,18 @@
         reçu fiscal.
       </p>
     </div>
-
     <iframe
-      id="haWidget"
-      allowtransparency="true"
-      scrolling="auto"
-      src="https://www.helloasso.com/associations/marem%20france/collectes/investir-dans-la-reinsertion-des-enfants-des-rues-du-togo/widget"
-      style="
-        width: 95%;
-        height: 1150px;
-        border: none;
-        text-align: center;
-        margin: 30px 10px 20px 10px;
-      "
-      onload="window.scroll(0, this.offsetTop)"
+      class="video"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/DfJzDeru7qQ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      style="margin: 100px auto 110px"
     ></iframe>
-    <div class="link-hello-asso btn-focus-anim">
-      <a
-        href="https://www.helloasso.com/associations/marem-france/collectes/investir-dans-la-reinsertion-des-enfants-des-rues-du-togo"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Faire un don</a
-      >
-    </div>
+
     <!-- Sections cartes flip -->
     <p class="txt-don txt-don-choice">
       Pour faire un don plusieurs solutions possibles :
@@ -361,9 +363,12 @@
           <span>Par Virement</span>
           <img src="../assets/img/apprentissage-enfant.jpg" alt="enfants" />
         </div>
-        <div class="verso">
+        <div class="verso verso-virement">
           <div class="contenu">
-            <p>IBAN: FR76 1027 8064 4500 0207 3160 147 – BIC: CMCIFR2A</p>
+            <p>
+              IBAN: FR76 1027 8064 4500 0207 3160 147<br />
+              - <br />BIC: CMCIFR2A
+            </p>
           </div>
         </div>
       </div>
@@ -411,7 +416,7 @@
             alt="logo"
           />
         </div>
-        <h5>&copy; 2021 Marem Togo - France</h5>
+        <h5>&copy; 2021-2022 Marem Togo - France</h5>
       </div>
       <div class="items-socialmedia">
         <ul>
@@ -429,7 +434,11 @@
             </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/ong-marem/">
+            <a
+              href="https://www.linkedin.com/company/ong-marem/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 class="logo-medias"
                 src="../assets/img/logos/linkedin.svg"
@@ -438,7 +447,11 @@
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/maremtogo">
+            <a
+              href="https://twitter.com/maremtogo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 class="logo-medias"
                 src="../assets/img/logos/twitter.svg"
