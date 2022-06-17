@@ -3003,11 +3003,11 @@ h5 {
     height: 70px;
   }
   .logo-footer {
-    width: 55px;
+    width: 50px;
     height: 50px;
     position: relative;
-    -webkit-transform: translate(9px, 14px);
-            transform: translate(9px, 14px);
+    -webkit-transform: translate(10px, 14px);
+            transform: translate(10px, 14px);
   }
   h5 {
     padding: 0;
@@ -3088,7 +3088,7 @@ h5 {
     font-size: 17px;
   }
   h5 {
-    font-size: 16px;
+    font-size: 15px;
   }
   .items-socialmedia {
     width: 80%;
